@@ -1,4 +1,4 @@
-package com.chimericdream.pannotiacompanion.data;
+package com.chimericdream.pannotiacompanion.loot;
 
 import com.chimericdream.pannotiacompanion.data.babel.andersen.AndersenLootTable;
 import com.chimericdream.pannotiacompanion.data.babel.englishtales.EnglishTalesLootTable;
@@ -11,7 +11,7 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 
 import java.util.Arrays;
 
-public class BabelBooks {
+public class BabelBookLootTables {
     public static LootPool.Builder getLootTable(float chance, float multiplier, float rolls) {
         LootPool.Builder builder = LootPool.builder();
 

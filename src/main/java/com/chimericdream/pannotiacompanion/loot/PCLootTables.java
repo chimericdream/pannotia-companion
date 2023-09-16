@@ -1,6 +1,5 @@
 package com.chimericdream.pannotiacompanion.loot;
 
-import com.chimericdream.pannotiacompanion.data.BabelBooks;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.loot.LootPool;
 import net.minecraft.util.Identifier;
@@ -33,7 +32,7 @@ public class PCLootTables {
     private static void checkVanillaLootTables(Identifier id, List<LootPool.Builder> poolBuilders) {
         if (BASTION_TREASURE_ID.equals(id)) {
             poolBuilders.add(getRandomGemLootTable());
-            poolBuilders.add(BabelBooks.getLootTable());
+            poolBuilders.add(BabelBookLootTables.getLootTable());
         }
     }
 }
