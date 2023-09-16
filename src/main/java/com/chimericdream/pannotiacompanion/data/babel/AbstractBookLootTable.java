@@ -32,19 +32,19 @@ abstract public class AbstractBookLootTable {
 
         bookProperties.put("pages", pages);
 
-        NbtCompound copyOfCopy = new NbtCompound();
-        copyOfCopy.putInt("generation", 2);
+        NbtCompound thirdEdition = new NbtCompound();
+        thirdEdition.putInt("generation", 2);
 
-        NbtCompound copyOfOriginal = new NbtCompound();
-        copyOfOriginal.putInt("generation", 1);
+        NbtCompound secondEdition = new NbtCompound();
+        secondEdition.putInt("generation", 1);
 
         NbtCompound firstEdition = new NbtCompound();
         firstEdition.putInt("generation", 0);
 
         return ItemEntry.builder(book)
             .apply(() -> SetNbtLootFunction.builder(bookProperties).build())
-            .apply(() -> SetNbtLootFunction.builder(copyOfCopy).conditionally(RandomChanceLootCondition.builder(0.4f)).build())
-            .apply(() -> SetNbtLootFunction.builder(copyOfOriginal).conditionally(RandomChanceLootCondition.builder(0.1f)).build())
+            .apply(() -> SetNbtLootFunction.builder(thirdEdition).conditionally(RandomChanceLootCondition.builder(0.4f)).build())
+            .apply(() -> SetNbtLootFunction.builder(secondEdition).conditionally(RandomChanceLootCondition.builder(0.1f)).build())
             .apply(() -> SetNbtLootFunction.builder(firstEdition).conditionally(RandomChanceLootCondition.builder(0.01f)).build());
     }
 }
