@@ -12,7 +12,41 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import java.util.Arrays;
 
 public class BabelBookLootTables {
-    public static LootPool.Builder getLootTable(float chance, float multiplier, float rolls) {
+    public static LootPool.Builder getTopTierLootTable(float chance, float multiplier, float rolls) {
+        LootPool.Builder builder = LootPool.builder();
+
+        LootPoolEntry[] andersenEntries = AndersenLootTable.getTopTierBookEntries();
+        LootPoolEntry[] brothersGrimmEntries = BrothersGrimmLootTable.getTopTierBookEntries();
+        LootPoolEntry[] englishTalesEntries = EnglishTalesLootTable.getTopTierBookEntries();
+        LootPoolEntry[] japaneseTalesEntries = JapaneseTalesLootTable.getTopTierBookEntries();
+
+        return builder
+            .with(Arrays.stream(andersenEntries).toList())
+            .with(Arrays.stream(brothersGrimmEntries).toList())
+            .with(Arrays.stream(englishTalesEntries).toList())
+            .with(Arrays.stream(japaneseTalesEntries).toList())
+            .conditionally(() -> RandomChanceWithLootingLootCondition.builder(chance, multiplier).build())
+            .rolls(ConstantLootNumberProvider.create(rolls));
+    }
+
+    public static LootPool.Builder getMediumTierLootTable(float chance, float multiplier, float rolls) {
+        LootPool.Builder builder = LootPool.builder();
+
+        LootPoolEntry[] andersenEntries = AndersenLootTable.getMediumTierBookEntries();
+        LootPoolEntry[] brothersGrimmEntries = BrothersGrimmLootTable.getMediumTierBookEntries();
+        LootPoolEntry[] englishTalesEntries = EnglishTalesLootTable.getMediumTierBookEntries();
+        LootPoolEntry[] japaneseTalesEntries = JapaneseTalesLootTable.getMediumTierBookEntries();
+
+        return builder
+            .with(Arrays.stream(andersenEntries).toList())
+            .with(Arrays.stream(brothersGrimmEntries).toList())
+            .with(Arrays.stream(englishTalesEntries).toList())
+            .with(Arrays.stream(japaneseTalesEntries).toList())
+            .conditionally(() -> RandomChanceWithLootingLootCondition.builder(chance, multiplier).build())
+            .rolls(ConstantLootNumberProvider.create(rolls));
+    }
+
+    public static LootPool.Builder getRandomBookLootTable(float chance, float multiplier, float rolls) {
         LootPool.Builder builder = LootPool.builder();
 
         LootPoolEntry[] andersenEntries = AndersenLootTable.getBookEntries();
@@ -29,7 +63,27 @@ public class BabelBookLootTables {
             .rolls(ConstantLootNumberProvider.create(rolls));
     }
 
-    public static LootPool.Builder getLootTable() {
-        return getLootTable(0.3f, 0.05f, 1f);
+    public static LootPool.Builder getTopTierLootTable(float rolls) {
+        return getTopTierLootTable(0.3f, 0.05f, rolls);
+    }
+
+    public static LootPool.Builder getMediumTierLootTable(float rolls) {
+        return getMediumTierLootTable(0.3f, 0.05f, rolls);
+    }
+
+    public static LootPool.Builder getRandomBookLootTable(float rolls) {
+        return getRandomBookLootTable(0.3f, 0.05f, rolls);
+    }
+
+    public static LootPool.Builder getTopTierLootTable() {
+        return getTopTierLootTable(1f);
+    }
+
+    public static LootPool.Builder getMediumTierLootTable() {
+        return getMediumTierLootTable(1f);
+    }
+
+    public static LootPool.Builder getRandomBookLootTable() {
+        return getRandomBookLootTable(1f);
     }
 }
