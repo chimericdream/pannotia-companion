@@ -1,13 +1,21 @@
 package com.chimericdream.pannotiacompanion.loot;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.block.Blocks;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
 import net.minecraft.loot.LootTables;
+import net.minecraft.loot.condition.AnyOfLootCondition;
+import net.minecraft.loot.condition.InvertedLootCondition;
+import net.minecraft.loot.condition.SurvivesExplosionLootCondition;
+import net.minecraft.loot.condition.TableBonusLootCondition;
+import net.minecraft.loot.entry.AlternativeEntry;
 import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.function.LootingEnchantLootFunction;
-import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.function.*;
+import net.minecraft.loot.operator.BoundedIntUnaryOperator;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
@@ -20,6 +28,23 @@ import static com.chimericdream.pannotiacompanion.loot.MobHeadLootTables.*;
 
 public class PCLootTables {
     public static void init() {
+        LootTableEvents.REPLACE.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+            // Only modify built-in loot tables and leave data pack loot tables untouched by checking the source.
+            if (!source.isBuiltin()) {
+                return null;
+            }
+
+            LootTable replaced;
+
+            replaced = replaceVanillaBlocks(id);
+
+            if (replaced != null) {
+                return replaced;
+            }
+
+            return null;
+        });
+
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
             // Only modify built-in loot tables and leave data pack loot tables untouched by checking the source.
             if (!source.isBuiltin()) {
@@ -36,6 +61,104 @@ public class PCLootTables {
                 tableBuilder.pool(builder);
             }
         });
+    }
+
+    private static LootTable replaceVanillaBlocks(Identifier id) {
+        if (Blocks.ANCIENT_DEBRIS.getLootTableId().equals(id)) {
+            return LootTable.builder()
+                .pool(
+                    LootPool.builder()
+                        .with(AlternativeEntry.builder(
+                            ItemEntry.builder(Items.ANCIENT_DEBRIS).conditionally(makeSilkTouchCondition()),
+                            ItemEntry.builder(Items.NETHERITE_SCRAP)
+                                .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))
+                                .apply(ExplosionDecayLootFunction.builder())
+                        ).build())
+                )
+                .build();
+        }
+
+        if (Blocks.BROWN_MUSHROOM_BLOCK.getLootTableId().equals(id)) {
+            return LootTable.builder()
+                .pool(
+                    LootPool.builder()
+                        .with(AlternativeEntry.builder(
+                            ItemEntry.builder(Items.BROWN_MUSHROOM_BLOCK).conditionally(makeSilkTouchCondition()),
+                            ItemEntry.builder(Items.BROWN_MUSHROOM)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(-2, 2)))
+                                .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))
+                                .apply(LimitCountLootFunction.builder(BoundedIntUnaryOperator.create(0)))
+                                .apply(ExplosionDecayLootFunction.builder())
+                        ).build())
+                )
+                .build();
+        }
+
+        if (Blocks.BUDDING_AMETHYST.getLootTableId().equals(id)) {
+            return LootTable.builder()
+                .pool(
+                    LootPool.builder()
+                        .with(AlternativeEntry.builder(
+                            ItemEntry.builder(Items.BUDDING_AMETHYST).conditionally(makeSilkTouchCondition()),
+                            ItemEntry.builder(Items.AMETHYST_BLOCK).conditionally(makeSurvivesExplosionCondition())
+                        ).build())
+                )
+                .build();
+        }
+
+        if (Blocks.JUNGLE_LEAVES.getLootTableId().equals(id)) {
+            return LootTable.builder()
+                .pool(
+                    LootPool.builder()
+                        .with(AlternativeEntry.builder(
+                            ItemEntry.builder(Items.JUNGLE_LEAVES)
+                                .conditionally(AnyOfLootCondition.builder(
+                                    makeShearsCondition(),
+                                    makeSilkTouchCondition()
+                                )),
+                            ItemEntry.builder(Items.JUNGLE_SAPLING)
+                                .conditionally(SurvivesExplosionLootCondition.builder())
+                                .conditionally(TableBonusLootCondition.builder(Enchantments.FORTUNE, 0.05f, 0.0625f, 0.083333336f, 0.1f))
+                        ).build())
+                        .rolls(ConstantLootNumberProvider.create(1))
+                )
+                .pool(
+                    LootPool.builder()
+                        .conditionally(InvertedLootCondition.builder(
+                            AnyOfLootCondition.builder(
+                                makeShearsCondition(),
+                                makeSilkTouchCondition()
+                            )
+                        ))
+                        .with(
+                            ItemEntry.builder(Items.STICK)
+                                .conditionally(TableBonusLootCondition.builder(Enchantments.FORTUNE, 0.02f, 0.022222223f, 0.025f, 0.033333335f, 0.1f))
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
+                                .apply(ExplosionDecayLootFunction.builder())
+                        )
+                        .rolls(ConstantLootNumberProvider.create(1))
+                )
+                .randomSequenceId(new Identifier("minecraft", "blocks/jungle_leaves"))
+                .build();
+        }
+
+        if (Blocks.RED_MUSHROOM_BLOCK.getLootTableId().equals(id)) {
+            return LootTable.builder()
+                .pool(
+                    LootPool.builder()
+                        .with(AlternativeEntry.builder(
+                            ItemEntry.builder(Items.RED_MUSHROOM_BLOCK).conditionally(makeSilkTouchCondition()),
+                            ItemEntry.builder(Items.RED_MUSHROOM)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(-2, 2)))
+                                .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))
+                                .apply(LimitCountLootFunction.builder(BoundedIntUnaryOperator.create(0)))
+                                .apply(ExplosionDecayLootFunction.builder())
+                        ).build())
+                )
+                .build();
+        }
+
+        return null;
     }
 
     private static void modifyVanillaGameplayEvents(Identifier id, List<LootPool.Builder> poolBuilders) {

@@ -1,5 +1,6 @@
 package com.chimericdream.pannotiacompanion.loot;
 
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
@@ -15,7 +16,10 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtList;
 import net.minecraft.predicate.NbtPredicate;
+import net.minecraft.predicate.NumberRange;
 import net.minecraft.predicate.entity.EntityPredicate;
+import net.minecraft.predicate.item.EnchantmentPredicate;
+import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
@@ -31,6 +35,22 @@ public class LootHelpers {
 
     public static LootCondition.Builder makeLootingCondition(float chance, float lootingMultiplier) {
         return () -> RandomChanceWithLootingLootCondition.builder(chance, lootingMultiplier).build();
+    }
+
+    public static LootCondition.Builder makeShearsCondition() {
+        return () -> MatchToolLootCondition
+            .builder(ItemPredicate.Builder.create().items(Items.SHEARS))
+            .build();
+    }
+
+    public static LootCondition.Builder makeSilkTouchCondition() {
+        return () -> MatchToolLootCondition
+            .builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, NumberRange.IntRange.ANY)))
+            .build();
+    }
+
+    public static LootCondition.Builder makeSurvivesExplosionCondition() {
+        return () -> SurvivesExplosionLootCondition.builder().build();
     }
 
     public static LootCondition.Builder makeChanceCondition(float chance) {
