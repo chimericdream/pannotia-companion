@@ -11,6 +11,7 @@ import net.minecraft.loot.function.LootFunction;
 import net.minecraft.loot.function.SetNameLootFunction;
 import net.minecraft.loot.function.SetNbtLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtList;
 import net.minecraft.predicate.NbtPredicate;
@@ -156,5 +157,16 @@ public class LootHelpers {
         return LootPool.builder()
             .with(ItemEntry.builder(item))
             .rolls(ConstantLootNumberProvider.create(1));
+    }
+
+    public static LootPool.Builder makeWeightedItemLootTable(Item item, int weight) {
+        return makeWeightedItemLootTable(item, weight, 1, 1);
+    }
+
+    public static LootPool.Builder makeWeightedItemLootTable(Item item, int weight, int min, int max) {
+        return LootPool.builder()
+            .with(ItemEntry.builder(item))
+            .with(ItemEntry.builder(Items.AIR).weight(weight - 1))
+            .rolls(UniformLootNumberProvider.create(min, max));
     }
 }

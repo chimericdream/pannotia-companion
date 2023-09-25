@@ -30,11 +30,22 @@ public class PCLootTables {
 
             checkVanillaMobs(id, poolBuilders);
             checkVanillaStructures(id, poolBuilders);
+            checkVanillaGameplayEvents(id, poolBuilders);
 
             for (LootPool.Builder builder : poolBuilders) {
                 tableBuilder.pool(builder);
             }
         });
+    }
+
+    private static void checkVanillaGameplayEvents(Identifier id, List<LootPool.Builder> poolBuilders) {
+        if (LootTables.FISHING_TREASURE_GAMEPLAY.equals(id)) {
+            poolBuilders.add(BabelBookLootTables.getRandomBookLootTable(0.03125f, 0f, 1f));
+        }
+
+        if (LootTables.PIGLIN_BARTERING_GAMEPLAY.equals(id)) {
+            poolBuilders.add(makeWeightedItemLootTable(Items.ANCIENT_DEBRIS, 1024, 1, 2));
+        }
     }
 
     private static void checkVanillaMobs(Identifier id, List<LootPool.Builder> poolBuilders) {
