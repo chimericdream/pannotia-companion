@@ -28,9 +28,9 @@ public class PCLootTables {
 
             List<LootPool.Builder> poolBuilders = new ArrayList<>();
 
-            checkVanillaMobs(id, poolBuilders);
-            checkVanillaStructures(id, poolBuilders);
-            checkVanillaGameplayEvents(id, poolBuilders);
+            modifyVanillaMobs(id, poolBuilders);
+            modifyVanillaStructures(id, poolBuilders);
+            modifyVanillaGameplayEvents(id, poolBuilders);
 
             for (LootPool.Builder builder : poolBuilders) {
                 tableBuilder.pool(builder);
@@ -38,7 +38,7 @@ public class PCLootTables {
         });
     }
 
-    private static void checkVanillaGameplayEvents(Identifier id, List<LootPool.Builder> poolBuilders) {
+    private static void modifyVanillaGameplayEvents(Identifier id, List<LootPool.Builder> poolBuilders) {
         if (LootTables.FISHING_TREASURE_GAMEPLAY.equals(id)) {
             poolBuilders.add(BabelBookLootTables.getRandomBookLootTable(0.03125f, 0f, 1f));
         }
@@ -48,7 +48,7 @@ public class PCLootTables {
         }
     }
 
-    private static void checkVanillaMobs(Identifier id, List<LootPool.Builder> poolBuilders) {
+    private static void modifyVanillaMobs(Identifier id, List<LootPool.Builder> poolBuilders) {
         if (EntityType.ALLAY.getLootTableId().equals(id)) {
             poolBuilders.add(getAllayHeadLootTable());
         }
@@ -383,7 +383,7 @@ public class PCLootTables {
         }
     }
 
-    private static void checkVanillaStructures(Identifier id, List<LootPool.Builder> poolBuilders) {
+    private static void modifyVanillaStructures(Identifier id, List<LootPool.Builder> poolBuilders) {
         if (LootTables.VILLAGE_ARMORER_CHEST.equals(id)) {
             poolBuilders.add(BabelBookLootTables.getRandomBookLootTable());
             poolBuilders.add(TreasureGemLootTables.getCommonGemLootTable());
