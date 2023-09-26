@@ -17,7 +17,9 @@ public class RecipeHelpers {
         JsonArray jsonArray = new JsonArray();
         jsonArray.add(pattern.get(0));
         jsonArray.add(pattern.get(1));
-        jsonArray.add(pattern.get(2));
+        if (pattern.size() > 2) {
+            jsonArray.add(pattern.get(2));
+        }
 
         json.add("pattern", jsonArray);
 
