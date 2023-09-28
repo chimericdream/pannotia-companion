@@ -1,2 +1,3 @@
 accessWidener	v1	named
 accessible	method	net/minecraft/entity/mob/MobEntity	interactWithItem	(Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;)Lnet/minecraft/util/ActionResult;
+accessible	field	net/minecraft/entity/passive/PassiveEntity	CHILD	Lnet/minecraft/entity/data/TrackedData;

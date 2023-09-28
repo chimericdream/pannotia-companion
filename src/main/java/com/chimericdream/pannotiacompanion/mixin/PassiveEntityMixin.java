@@ -7,7 +7,6 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PassiveEntity.class)
 abstract public class PassiveEntityMixin extends MobEntityMixin {
@@ -15,13 +14,6 @@ abstract public class PassiveEntityMixin extends MobEntityMixin {
 
     @Shadow
     abstract public void setBreedingAge(int age);
-
-    @Inject(method = "getBreedingAge", at = @At("HEAD"), cancellable = true)
-    public void pc$getBreedingAge(CallbackInfoReturnable<Integer> info) {
-        if (this.isForeverBaby) {
-            info.setReturnValue(FOREVER_BABY_AGE);
-        }
-    }
 
     @Inject(method = "readCustomDataFromNbt", at = @At("TAIL"))
     public void pc$readCustomDataFromNbt(NbtCompound nbt, CallbackInfo info) {
