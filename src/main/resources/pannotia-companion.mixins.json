@@ -3,7 +3,6 @@
 	"package": "com.chimericdream.pannotiacompanion.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin",
 		"RecipeManagerMixin"
 	],
 	"injectors": {
