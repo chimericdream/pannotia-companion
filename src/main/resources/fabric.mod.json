@@ -15,6 +15,9 @@
 	"icon": "assets/${modid}/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"com.chimericdream.pannotiacompanion.DataGenerator"
+		],
 		"main": [
             "com.chimericdream.pannotiacompanion.PannotiaCompanionMod"
 		],

@@ -18,6 +18,16 @@ repositories {
 	// for more information about repositories.
 }
 
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+					'src/main/generated'
+			]
+		}
+	}
+}
+
 loom {
 	accessWidenerPath = file("src/main/resources/${project.modid}.accesswidener")
 
@@ -30,6 +40,17 @@ loom {
 		}
 	}
 
+	runs {
+		datagenClient {
+			inherit client
+			name "Data Generation"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+			vmArg "-Dfabric-api.datagen.modid=${project.modid}"
+
+			runDir "build/datagen"
+		}
+	}
 }
 
 dependencies {
@@ -57,6 +78,11 @@ processResources {
 			"version": project.version
 		)
 	}
+}
+
+tasks.named("build").configure {
+	it.dependsOn(tasks.named("runDatagenClient"))
+	it.mustRunAfter(tasks.named("runDatagenClient"))
 }
 
 tasks.withType(JavaCompile).configureEach {
