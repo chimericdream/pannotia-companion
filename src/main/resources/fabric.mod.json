@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "pannotia-companion",
+	"id": "${modid}",
 	"version": "${version}",
 	"name": "Pannotia Companion",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/pannotia-companion/icon.png",
+	"icon": "assets/${modid}/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -23,20 +23,17 @@
 		]
 	},
 	"mixins": [
-		"pannotia-companion.mixins.json",
+		"${modid}.mixins.json",
 		{
-			"config": "pannotia-companion.client.mixins.json",
+			"config": "${modid}.client.mixins.json",
 			"environment": "client"
 		}
 	],
-	"accessWidener": "pannotiacompanion.accesswidener",
+	"accessWidener": "${modid}.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }

@@ -3,8 +3,8 @@ plugins {
 	id 'maven-publish'
 }
 
-version = project.mod_version
 group = project.maven_group
+version = project.mod_version
 
 base {
 	archivesName = project.archives_base_name
@@ -19,12 +19,12 @@ repositories {
 }
 
 loom {
-	accessWidenerPath = file("src/main/resources/pannotiacompanion.accesswidener")
+	accessWidenerPath = file("src/main/resources/${project.modid}.accesswidener")
 
     splitEnvironmentSourceSets()
 
 	mods {
-		"pannotia-companion" {
+		"${project.modid}" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
@@ -48,10 +48,14 @@ dependencies {
 }
 
 processResources {
+	inputs.property "modid", project.modid
 	inputs.property "version", project.version
 
 	filesMatching("fabric.mod.json") {
-		expand "version": project.version
+		expand(
+			"modid": project.modid,
+			"version": project.version
+		)
 	}
 }
 
