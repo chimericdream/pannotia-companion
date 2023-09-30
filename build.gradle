@@ -80,6 +80,11 @@ processResources {
 	}
 }
 
+tasks.named("runClient").configure {
+	it.dependsOn(tasks.named("runDatagenClient"))
+	it.mustRunAfter(tasks.named("runDatagenClient"))
+}
+
 tasks.named("build").configure {
 	it.dependsOn(tasks.named("runDatagenClient"))
 	it.mustRunAfter(tasks.named("runDatagenClient"))
