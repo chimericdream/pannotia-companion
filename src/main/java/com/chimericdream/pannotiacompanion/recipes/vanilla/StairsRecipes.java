@@ -1,4 +1,4 @@
-package com.chimericdream.pannotiacompanion.recipes;
+package com.chimericdream.pannotiacompanion.recipes.vanilla;
 
 import com.google.common.collect.Lists;
 import com.google.gson.JsonObject;
@@ -7,7 +7,7 @@ import net.minecraft.util.Pair;
 
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createShapedRecipeJson;
 
-public class VanillaStairsRecipes {
+public class StairsRecipes {
     public static Pair<Identifier, JsonObject> ACACIA_STAIRS = new Pair<>(
         new Identifier("minecraft", "acacia_stairs"),
         makeWoodenStairsRecipe(new Identifier("minecraft", "acacia_planks"), new Identifier("minecraft", "acacia_stairs"))
@@ -237,7 +237,7 @@ public class VanillaStairsRecipes {
         return makeStairsRecipe(planks, stairs, "wooden_stairs");
     }
 
-    public static Pair<Identifier, JsonObject>[] VANILLA_STAIRS_RECIPES = new Pair[]{
+    public static Pair<Identifier, JsonObject>[] STAIRS_RECIPES = new Pair[]{
         ACACIA_STAIRS,
         ANDESITE_STAIRS,
         BIRCH_STAIRS,

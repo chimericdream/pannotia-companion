@@ -1,4 +1,4 @@
-package com.chimericdream.pannotiacompanion.recipes;
+package com.chimericdream.pannotiacompanion.recipes.vanilla;
 
 import com.google.common.collect.Lists;
 import com.google.gson.JsonObject;
@@ -7,7 +7,7 @@ import net.minecraft.util.Pair;
 
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createShapedRecipeJson;
 
-public class VanillaWoodRecipes {
+public class WoodRecipes {
     public static Pair<Identifier, JsonObject> ACACIA_WOOD = new Pair<>(
         new Identifier("minecraft", "acacia_wood"),
         makeWoodRecipe(new Identifier("minecraft", "acacia_log"), new Identifier("minecraft", "acacia_wood"))
@@ -102,7 +102,7 @@ public class VanillaWoodRecipes {
         );
     }
 
-    public static Pair<Identifier, JsonObject>[] VANILLA_WOOD_RECIPES = new Pair[]{
+    public static Pair<Identifier, JsonObject>[] WOOD_RECIPES = new Pair[]{
         ACACIA_WOOD,
         BIRCH_WOOD,
         CHERRY_WOOD,

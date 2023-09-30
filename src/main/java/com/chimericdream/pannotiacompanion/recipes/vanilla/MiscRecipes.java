@@ -1,4 +1,4 @@
-package com.chimericdream.pannotiacompanion.recipes;
+package com.chimericdream.pannotiacompanion.recipes.vanilla;
 
 import com.chimericdream.pannotiacompanion.ModInfo;
 import com.google.common.collect.Lists;
@@ -8,7 +8,7 @@ import net.minecraft.util.Pair;
 
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.*;
 
-public class VanillaMiscRecipes {
+public class MiscRecipes {
     public static Pair<Identifier, JsonObject> BAMBOO_PLANKS = new Pair<>(
         new Identifier("minecraft", "bamboo_planks"),
         createShapedRecipeJson(
@@ -204,7 +204,7 @@ public class VanillaMiscRecipes {
     );
 
 
-    public static Pair<Identifier, JsonObject>[] VANILLA_MISC_RECIPES = new Pair[]{
+    public static Pair<Identifier, JsonObject>[] MISC_RECIPES = new Pair[]{
         BAMBOO_PLANKS,
         BREAD,
         BRICKS,

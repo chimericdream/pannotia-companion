@@ -1,4 +1,4 @@
-package com.chimericdream.pannotiacompanion.recipes;
+package com.chimericdream.pannotiacompanion.recipes.vanilla;
 
 import com.google.common.collect.Lists;
 import com.google.gson.JsonObject;
@@ -7,7 +7,7 @@ import net.minecraft.util.Pair;
 
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createShapedRecipeJson;
 
-public class VanillaTrapdoorsRecipes {
+public class TrapdoorsRecipes {
     public static Pair<Identifier, JsonObject> ACACIA_TRAPDOOR = new Pair<>(
         new Identifier("minecraft", "acacia_trapdoor"),
         makeWoodenTrapdoorRecipe(new Identifier("minecraft", "acacia_planks"), new Identifier("minecraft", "acacia_trapdoor"))
@@ -69,7 +69,7 @@ public class VanillaTrapdoorsRecipes {
         return makeTrapdoorRecipe(planks, trapdoor, "wooden_trapdoor");
     }
 
-    public static Pair<Identifier, JsonObject>[] VANILLA_TRAPDOORS_RECIPES = new Pair[]{
+    public static Pair<Identifier, JsonObject>[] TRAPDOORS_RECIPES = new Pair[]{
         ACACIA_TRAPDOOR,
         BIRCH_TRAPDOOR,
         CHERRY_TRAPDOOR,

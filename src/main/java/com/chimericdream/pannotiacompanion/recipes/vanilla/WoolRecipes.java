@@ -1,4 +1,4 @@
-package com.chimericdream.pannotiacompanion.recipes;
+package com.chimericdream.pannotiacompanion.recipes.vanilla;
 
 import com.google.common.collect.Lists;
 import com.google.gson.JsonObject;
@@ -7,7 +7,7 @@ import net.minecraft.util.Pair;
 
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createShapedRecipeJson;
 
-public class VanillaWoolRecipes {
+public class WoolRecipes {
     public static Pair<Identifier, JsonObject> BLACK_WOOL = new Pair<>(
         new Identifier("minecraft", "black_wool"),
         makeWoolRecipe("black")
@@ -84,7 +84,7 @@ public class VanillaWoolRecipes {
         );
     }
 
-    public static Pair<Identifier, JsonObject>[] VANILLA_WOOL_RECIPES = new Pair[]{
+    public static Pair<Identifier, JsonObject>[] WOOL_RECIPES = new Pair[]{
         BLACK_WOOL,
         BLUE_WOOL,
         BROWN_WOOL,

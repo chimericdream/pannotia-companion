@@ -1,4 +1,4 @@
-package com.chimericdream.pannotiacompanion.recipes;
+package com.chimericdream.pannotiacompanion.recipes.vanilla;
 
 import com.google.common.collect.Lists;
 import com.google.gson.JsonObject;
@@ -7,7 +7,7 @@ import net.minecraft.util.Pair;
 
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createShapedRecipeJson;
 
-public class VanillaCandleRecipes {
+public class CandleRecipes {
     public static Pair<Identifier, JsonObject> BLACK_CANDLE = new Pair<>(
         new Identifier("minecraft", "black_candle"),
         makeCandleRecipe("black")
@@ -84,7 +84,7 @@ public class VanillaCandleRecipes {
         );
     }
 
-    public static Pair<Identifier, JsonObject>[] VANILLA_CANDLE_RECIPES = new Pair[]{
+    public static Pair<Identifier, JsonObject>[] CANDLE_RECIPES = new Pair[]{
         BLACK_CANDLE,
         BLUE_CANDLE,
         BROWN_CANDLE,
