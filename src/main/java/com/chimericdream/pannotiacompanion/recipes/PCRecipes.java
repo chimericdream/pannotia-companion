@@ -16,19 +16,19 @@ import static com.chimericdream.pannotiacompanion.recipes.VanillaWoodRecipes.VAN
 import static com.chimericdream.pannotiacompanion.recipes.VanillaWoolRecipes.VANILLA_WOOL_RECIPES;
 
 public class PCRecipes {
-    public static Pair<Identifier, JsonObject>[] ALL_RECIPES;
+    public static Pair<Identifier, JsonObject>[] RECIPE_OVERRIDES;
 
     static {
-        List<Pair<Identifier, JsonObject>> allRecipes = new ArrayList<>();
+        List<Pair<Identifier, JsonObject>> recipeOverrides = new ArrayList<>();
 
-        allRecipes.addAll(Arrays.asList(VANILLA_CANDLE_RECIPES));
-        allRecipes.addAll(Arrays.asList(VANILLA_MISC_RECIPES));
-        allRecipes.addAll(Arrays.asList(VANILLA_STAIRS_RECIPES));
-        allRecipes.addAll(Arrays.asList(VANILLA_TRAPDOORS_RECIPES));
-        allRecipes.addAll(Arrays.asList(VANILLA_WOOD_RECIPES));
-        allRecipes.addAll(Arrays.asList(VANILLA_WOOL_RECIPES));
+        recipeOverrides.addAll(Arrays.asList(VANILLA_CANDLE_RECIPES));
+        recipeOverrides.addAll(Arrays.asList(VANILLA_MISC_RECIPES));
+        recipeOverrides.addAll(Arrays.asList(VANILLA_STAIRS_RECIPES));
+        recipeOverrides.addAll(Arrays.asList(VANILLA_TRAPDOORS_RECIPES));
+        recipeOverrides.addAll(Arrays.asList(VANILLA_WOOD_RECIPES));
+        recipeOverrides.addAll(Arrays.asList(VANILLA_WOOL_RECIPES));
 
         //noinspection unchecked
-        ALL_RECIPES = allRecipes.toArray(new Pair[0]);
+        RECIPE_OVERRIDES = recipeOverrides.toArray(new Pair[0]);
     }
 }
