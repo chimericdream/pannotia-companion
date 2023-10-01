@@ -101,6 +101,22 @@ public class UtilityRecipes {
         )
     );
 
+    public static Pair<Identifier, JsonObject> FASTER_COPPER_OXIDIZATION = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "faster_copper_oxidization"),
+        createShapedRecipeJson(
+            Lists.newArrayList('#', 'G', 'W'),
+            Lists.newArrayList(
+                new Identifier("minecraft", "copper_block"),
+                new Identifier("minecraft", "gunpowder"),
+                new Identifier("minecraft", "water_bucket")
+            ),
+            Lists.newArrayList("item", "item", "item"),
+            Lists.newArrayList("#G#", "#W#", "###"),
+            new Identifier("minecraft", "oxidized_copper"),
+            7
+        )
+    );
+
     public static Pair<Identifier, JsonObject> GRAVEL_FROM_FLINT = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "gravel_from_flint"),
         createShapedRecipeJson(
@@ -268,6 +284,7 @@ public class UtilityRecipes {
         COBBLED_DEEPSLATE,
         DISPENSER_FROM_DROPPER,
         DISPENSER_FROM_DROPPER_ALT,
+        FASTER_COPPER_OXIDIZATION,
         GRAVEL_FROM_FLINT,
         HEART_OF_THE_SEA,
         LEATHER_FROM_SMELTING_ROTTEN_FLESH,
