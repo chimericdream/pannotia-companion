@@ -9,6 +9,36 @@ import net.minecraft.util.Pair;
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.*;
 
 public class UtilityRecipes {
+    public static Pair<Identifier, JsonObject> BLACKSTONE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "blackstone"),
+        createShapedRecipeJson(
+            Lists.newArrayList('#', 'B'),
+            Lists.newArrayList(
+                new Identifier(ModInfo.MOD_ID, "coal_charcoal"),
+                new Identifier("minecraft", "basalt")
+            ),
+            Lists.newArrayList("tag", "item"),
+            Lists.newArrayList("#B", "B#"),
+            new Identifier("minecraft", "blackstone"),
+            2
+        )
+    );
+
+    public static Pair<Identifier, JsonObject> BLACKSTONE_MIRROR = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "blackstone_mirror"),
+        createShapedRecipeJson(
+            Lists.newArrayList('#', 'B'),
+            Lists.newArrayList(
+                new Identifier(ModInfo.MOD_ID, "coal_charcoal"),
+                new Identifier("minecraft", "basalt")
+            ),
+            Lists.newArrayList("tag", "item"),
+            Lists.newArrayList("B#", "#B"),
+            new Identifier("minecraft", "blackstone"),
+            2
+        )
+    );
+
     public static Pair<Identifier, JsonObject> BONE_BLOCK_FROM_BONES = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "bone_block_from_bones"),
         createShapelessRecipeJson(
@@ -165,6 +195,36 @@ public class UtilityRecipes {
         )
     );
 
+    public static Pair<Identifier, JsonObject> POLISHED_BLACKSTONE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "polished_blackstone"),
+        createShapedRecipeJson(
+            Lists.newArrayList('#', 'B'),
+            Lists.newArrayList(
+                new Identifier(ModInfo.MOD_ID, "coal_charcoal"),
+                new Identifier("minecraft", "polished_basalt")
+            ),
+            Lists.newArrayList("tag", "item"),
+            Lists.newArrayList("#B", "B#"),
+            new Identifier("minecraft", "polished_blackstone"),
+            2
+        )
+    );
+
+    public static Pair<Identifier, JsonObject> POLISHED_BLACKSTONE_MIRROR = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "polished_blackstone_mirror"),
+        createShapedRecipeJson(
+            Lists.newArrayList('#', 'B'),
+            Lists.newArrayList(
+                new Identifier(ModInfo.MOD_ID, "coal_charcoal"),
+                new Identifier("minecraft", "polished_basalt")
+            ),
+            Lists.newArrayList("tag", "item"),
+            Lists.newArrayList("B#", "#B"),
+            new Identifier("minecraft", "polished_blackstone"),
+            2
+        )
+    );
+
     public static Pair<Identifier, JsonObject> POLISHED_DEEPSLATE_FROM_DEEPSLATE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "polished_deepslate_from_deepslate"),
         createShapedRecipeJson(
@@ -277,6 +337,8 @@ public class UtilityRecipes {
 
     @SuppressWarnings("unchecked")
     public static Pair<Identifier, JsonObject>[] UTILITY_RECIPES = new Pair[]{
+        BLACKSTONE,
+        BLACKSTONE_MIRROR,
         BONE_BLOCK_FROM_BONES,
         CHESTS_FROM_BAMBOO_BLOCKS,
         CHESTS_FROM_LOGS,
@@ -289,6 +351,8 @@ public class UtilityRecipes {
         HEART_OF_THE_SEA,
         LEATHER_FROM_SMELTING_ROTTEN_FLESH,
         MOSS_BLOCKS_FROM_CARPET,
+        POLISHED_BLACKSTONE,
+        POLISHED_BLACKSTONE_MIRROR,
         POLISHED_DEEPSLATE_FROM_DEEPSLATE,
         PRISMARINE_SHARDS_FROM_BRICKS,
         REDSTONE_TORCH_FROM_TORCH,
