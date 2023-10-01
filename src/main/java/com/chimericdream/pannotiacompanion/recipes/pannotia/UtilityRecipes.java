@@ -259,6 +259,7 @@ public class UtilityRecipes {
         )
     );
 
+    @SuppressWarnings("unchecked")
     public static Pair<Identifier, JsonObject>[] UTILITY_RECIPES = new Pair[]{
         BONE_BLOCK_FROM_BONES,
         CHESTS_FROM_BAMBOO_BLOCKS,

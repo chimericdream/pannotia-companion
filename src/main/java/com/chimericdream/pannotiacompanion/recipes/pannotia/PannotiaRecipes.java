@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.chimericdream.pannotiacompanion.recipes.pannotia.CoralRecipes.CORAL_RECIPES;
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.UtilityRecipes.UTILITY_RECIPES;
 
 public class PannotiaRecipes {
@@ -16,6 +17,7 @@ public class PannotiaRecipes {
     static {
         List<Pair<Identifier, JsonObject>> overrides = new ArrayList<>();
 
+        overrides.addAll(Arrays.asList(CORAL_RECIPES));
         overrides.addAll(Arrays.asList(UTILITY_RECIPES));
 
         //noinspection unchecked
