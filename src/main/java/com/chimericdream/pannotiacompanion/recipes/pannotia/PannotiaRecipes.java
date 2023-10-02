@@ -10,6 +10,8 @@ import java.util.List;
 
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.CoralRecipes.CORAL_RECIPES;
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.MoreDyesRecipes.DYE_RECIPES;
+import static com.chimericdream.pannotiacompanion.recipes.pannotia.SandstoneDyeingRecipes.SANDSTONE_DYEING_RECIPES;
+import static com.chimericdream.pannotiacompanion.recipes.pannotia.StonecuttingRecipes.STONECUTTING_RECIPES;
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.UtilityRecipes.UTILITY_RECIPES;
 
 public class PannotiaRecipes {
@@ -20,6 +22,8 @@ public class PannotiaRecipes {
 
         overrides.addAll(Arrays.asList(CORAL_RECIPES));
         overrides.addAll(Arrays.asList(DYE_RECIPES));
+        overrides.addAll(Arrays.asList(SANDSTONE_DYEING_RECIPES));
+        overrides.addAll(Arrays.asList(STONECUTTING_RECIPES));
         overrides.addAll(Arrays.asList(UTILITY_RECIPES));
 
         //noinspection unchecked
