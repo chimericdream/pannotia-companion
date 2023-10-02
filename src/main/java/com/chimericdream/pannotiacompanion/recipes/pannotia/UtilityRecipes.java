@@ -9,7 +9,7 @@ import net.minecraft.util.Pair;
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.*;
 
 public class UtilityRecipes {
-    public static Pair<Identifier, JsonObject> BLACKSTONE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> BLACKSTONE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "blackstone"),
         createShapedRecipeJson(
             Lists.newArrayList('#', 'B'),
@@ -24,7 +24,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> BLACKSTONE_MIRROR = new Pair<>(
+    public static final Pair<Identifier, JsonObject> BLACKSTONE_MIRROR = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "blackstone_mirror"),
         createShapedRecipeJson(
             Lists.newArrayList('#', 'B'),
@@ -39,7 +39,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> BONE_BLOCK_FROM_BONES = new Pair<>(
+    public static final Pair<Identifier, JsonObject> BONE_BLOCK_FROM_BONES = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "bone_block_from_bones"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -51,7 +51,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> CHESTS_FROM_BAMBOO_BLOCKS = new Pair<>(
+    public static final Pair<Identifier, JsonObject> CHESTS_FROM_BAMBOO_BLOCKS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "chests_from_bamboo_blocks"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -63,7 +63,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> CHESTS_FROM_LOGS = new Pair<>(
+    public static final Pair<Identifier, JsonObject> CHESTS_FROM_LOGS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "chests_from_logs"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -75,7 +75,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> CLAY_BLOCK_FROM_SAND_AND_GRAVEL = new Pair<>(
+    public static final Pair<Identifier, JsonObject> CLAY_BLOCK_FROM_SAND_AND_GRAVEL = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "clay_block_from_sand_and_gravel"),
         createShapedRecipeJson(
             Lists.newArrayList('x', 'y', 'z'),
@@ -91,7 +91,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> COBBLED_DEEPSLATE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> COBBLED_DEEPSLATE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "cobbled_deepslate"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -103,7 +103,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> DISPENSER_FROM_DROPPER = new Pair<>(
+    public static final Pair<Identifier, JsonObject> DISPENSER_FROM_DROPPER = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "dispenser_from_dropper"),
         createShapedRecipeJson(
             Lists.newArrayList('/', 's', '#'),
@@ -119,7 +119,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> DISPENSER_FROM_DROPPER_ALT = new Pair<>(
+    public static final Pair<Identifier, JsonObject> DISPENSER_FROM_DROPPER_ALT = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "dispenser_from_dropper_alt"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -131,7 +131,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> FASTER_COPPER_OXIDIZATION = new Pair<>(
+    public static final Pair<Identifier, JsonObject> FASTER_COPPER_OXIDIZATION = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "faster_copper_oxidization"),
         createShapedRecipeJson(
             Lists.newArrayList('#', 'G', 'W'),
@@ -147,7 +147,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> GRAVEL_FROM_FLINT = new Pair<>(
+    public static final Pair<Identifier, JsonObject> GRAVEL_FROM_FLINT = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "gravel_from_flint"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -158,7 +158,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> HEART_OF_THE_SEA = new Pair<>(
+    public static final Pair<Identifier, JsonObject> HEART_OF_THE_SEA = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "heart_of_the_sea"),
         createShapedRecipeJson(
             Lists.newArrayList('x', 'y'),
@@ -172,7 +172,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> LEATHER_FROM_SMELTING_ROTTEN_FLESH = new Pair<>(
+    public static final Pair<Identifier, JsonObject> LEATHER_FROM_SMELTING_ROTTEN_FLESH = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "leather_from_smelting_rotten_flesh"),
         createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "rotten_flesh")),
@@ -182,7 +182,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> MOSS_BLOCKS_FROM_CARPET = new Pair<>(
+    public static final Pair<Identifier, JsonObject> MOSS_BLOCKS_FROM_CARPET = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "moss_blocks_from_carpet"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -195,7 +195,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> POLISHED_BLACKSTONE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> POLISHED_BLACKSTONE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "polished_blackstone"),
         createShapedRecipeJson(
             Lists.newArrayList('#', 'B'),
@@ -210,7 +210,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> POLISHED_BLACKSTONE_MIRROR = new Pair<>(
+    public static final Pair<Identifier, JsonObject> POLISHED_BLACKSTONE_MIRROR = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "polished_blackstone_mirror"),
         createShapedRecipeJson(
             Lists.newArrayList('#', 'B'),
@@ -225,7 +225,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> POLISHED_DEEPSLATE_FROM_DEEPSLATE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> POLISHED_DEEPSLATE_FROM_DEEPSLATE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "polished_deepslate_from_deepslate"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -237,7 +237,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> PRISMARINE_SHARDS_FROM_BRICKS = new Pair<>(
+    public static final Pair<Identifier, JsonObject> PRISMARINE_SHARDS_FROM_BRICKS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "prismarine_shards_from_bricks"),
         createShapelessRecipeJson(
             Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "prismarine_bricks"))),
@@ -246,7 +246,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> REDSTONE_TORCH_FROM_TORCH = new Pair<>(
+    public static final Pair<Identifier, JsonObject> REDSTONE_TORCH_FROM_TORCH = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "redstone_torch_from_torch"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -257,7 +257,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> REPEATER_PLUS_TORCHES = new Pair<>(
+    public static final Pair<Identifier, JsonObject> REPEATER_PLUS_TORCHES = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "repeater_plus_torches"),
         createShapedRecipeJson(
             Lists.newArrayList('x', 'y', 'z'),
@@ -272,7 +272,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> SMALL_DRIPLEAF = new Pair<>(
+    public static final Pair<Identifier, JsonObject> SMALL_DRIPLEAF = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "small_dripleaf"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -283,7 +283,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> SNOW_BLOCK_FROM_LAYERS = new Pair<>(
+    public static final Pair<Identifier, JsonObject> SNOW_BLOCK_FROM_LAYERS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "snow_block_from_layers"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -294,7 +294,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> SPONGE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> SPONGE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "sponge"),
         createShapedRecipeJson(
             Lists.newArrayList('x', 'y'),
@@ -309,7 +309,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> STICKS_FROM_LOGS = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STICKS_FROM_LOGS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "sticks_from_logs"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -321,7 +321,7 @@ public class UtilityRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> TRAPPED_CHEST = new Pair<>(
+    public static final Pair<Identifier, JsonObject> TRAPPED_CHEST = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "trapped_chest"),
         createShapedRecipeJson(
             Lists.newArrayList('x', 'h'),
@@ -336,7 +336,7 @@ public class UtilityRecipes {
     );
 
     @SuppressWarnings("unchecked")
-    public static Pair<Identifier, JsonObject>[] UTILITY_RECIPES = new Pair[]{
+    public static final Pair<Identifier, JsonObject>[] UTILITY_RECIPES = new Pair[]{
         BLACKSTONE,
         BLACKSTONE_MIRROR,
         BONE_BLOCK_FROM_BONES,

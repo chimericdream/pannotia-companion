@@ -12,9 +12,9 @@ import net.minecraft.nbt.NbtString;
 import net.minecraft.util.Pair;
 
 abstract public class AbstractBookLootTable {
-    public static NbtCompound thirdEdition;
-    public static NbtCompound secondEdition;
-    public static NbtCompound firstEdition;
+    public static final NbtCompound thirdEdition;
+    public static final NbtCompound secondEdition;
+    public static final NbtCompound firstEdition;
 
     static {
         thirdEdition = new NbtCompound();

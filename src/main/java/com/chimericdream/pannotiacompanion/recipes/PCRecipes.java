@@ -12,7 +12,7 @@ import static com.chimericdream.pannotiacompanion.recipes.pannotia.PannotiaRecip
 import static com.chimericdream.pannotiacompanion.recipes.vanilla.VanillaRecipes.VANILLA_RECIPE_OVERRIDES;
 
 public class PCRecipes {
-    public static Pair<Identifier, JsonObject>[] ALL_RECIPES;
+    public static final Pair<Identifier, JsonObject>[] ALL_RECIPES;
 
     static {
         List<Pair<Identifier, JsonObject>> allRecipes = new ArrayList<>();

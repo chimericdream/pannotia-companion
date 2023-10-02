@@ -16,7 +16,7 @@ import static com.chimericdream.pannotiacompanion.recipes.vanilla.WoodRecipes.WO
 import static com.chimericdream.pannotiacompanion.recipes.vanilla.WoolRecipes.WOOL_RECIPES;
 
 public class VanillaRecipes {
-    public static Pair<Identifier, JsonObject>[] VANILLA_RECIPE_OVERRIDES;
+    public static final Pair<Identifier, JsonObject>[] VANILLA_RECIPE_OVERRIDES;
 
     static {
         List<Pair<Identifier, JsonObject>> overrides = new ArrayList<>();

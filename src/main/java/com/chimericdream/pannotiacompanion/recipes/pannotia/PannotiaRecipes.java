@@ -13,7 +13,7 @@ import static com.chimericdream.pannotiacompanion.recipes.pannotia.MoreDyesRecip
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.UtilityRecipes.UTILITY_RECIPES;
 
 public class PannotiaRecipes {
-    public static Pair<Identifier, JsonObject>[] PANNOTIA_ADDED_RECIPES;
+    public static final Pair<Identifier, JsonObject>[] PANNOTIA_ADDED_RECIPES;
 
     static {
         List<Pair<Identifier, JsonObject>> overrides = new ArrayList<>();

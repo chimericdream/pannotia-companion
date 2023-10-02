@@ -9,7 +9,7 @@ import net.minecraft.util.Pair;
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.*;
 
 public class MiscRecipes {
-    public static Pair<Identifier, JsonObject> BAMBOO_PLANKS = new Pair<>(
+    public static final Pair<Identifier, JsonObject> BAMBOO_PLANKS = new Pair<>(
         new Identifier("minecraft", "bamboo_planks"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -23,7 +23,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> BREAD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> BREAD = new Pair<>(
         new Identifier("minecraft", "bread"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -35,7 +35,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> BRICKS = new Pair<>(
+    public static final Pair<Identifier, JsonObject> BRICKS = new Pair<>(
         new Identifier("minecraft", "bricks"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -47,7 +47,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> FERMENTED_SPIDER_EYE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> FERMENTED_SPIDER_EYE = new Pair<>(
         new Identifier("minecraft", "fermented_spider_eye"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -59,7 +59,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> GOLD_NUGGET_FROM_BLASTING = new Pair<>(
+    public static final Pair<Identifier, JsonObject> GOLD_NUGGET_FROM_BLASTING = new Pair<>(
         new Identifier("minecraft", "gold_nugget_from_blasting"),
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "gold_nugget")),
@@ -71,7 +71,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> GOLD_NUGGET_FROM_SMELTING = new Pair<>(
+    public static final Pair<Identifier, JsonObject> GOLD_NUGGET_FROM_SMELTING = new Pair<>(
         new Identifier("minecraft", "gold_nugget_from_smelting"),
         createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "gold_nugget")),
@@ -83,7 +83,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> IRON_NUGGET_FROM_BLASTING = new Pair<>(
+    public static final Pair<Identifier, JsonObject> IRON_NUGGET_FROM_BLASTING = new Pair<>(
         new Identifier("minecraft", "iron_nugget_from_blasting"),
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_nugget")),
@@ -95,7 +95,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> IRON_NUGGET_FROM_SMELTING = new Pair<>(
+    public static final Pair<Identifier, JsonObject> IRON_NUGGET_FROM_SMELTING = new Pair<>(
         new Identifier("minecraft", "iron_nugget_from_smelting"),
         createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_nugget")),
@@ -107,7 +107,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> NETHERITE_INGOT = new Pair<>(
+    public static final Pair<Identifier, JsonObject> NETHERITE_INGOT = new Pair<>(
         new Identifier("minecraft", "netherite_ingot"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -124,7 +124,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> PACKED_ICE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> PACKED_ICE = new Pair<>(
         new Identifier("minecraft", "packed_ice"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -135,7 +135,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> PAPER = new Pair<>(
+    public static final Pair<Identifier, JsonObject> PAPER = new Pair<>(
         new Identifier("minecraft", "paper"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -148,7 +148,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> SHULKER_BOX = new Pair<>(
+    public static final Pair<Identifier, JsonObject> SHULKER_BOX = new Pair<>(
         new Identifier("minecraft", "shulker_box"),
         createShapelessRecipeJson(
             Lists.newArrayList(
@@ -160,7 +160,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> SLIME_BALL = new Pair<>(
+    public static final Pair<Identifier, JsonObject> SLIME_BALL = new Pair<>(
         new Identifier("minecraft", "slime_ball"),
         createShapelessRecipeJson(
             Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "slime_block"))),
@@ -169,7 +169,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> SLIME_BLOCK = new Pair<>(
+    public static final Pair<Identifier, JsonObject> SLIME_BLOCK = new Pair<>(
         new Identifier("minecraft", "slime_block"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -180,7 +180,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> SNOW = new Pair<>(
+    public static final Pair<Identifier, JsonObject> SNOW = new Pair<>(
         new Identifier("minecraft", "snow"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -192,7 +192,7 @@ public class MiscRecipes {
         )
     );
 
-    public static Pair<Identifier, JsonObject> SNOW_BLOCK = new Pair<>(
+    public static final Pair<Identifier, JsonObject> SNOW_BLOCK = new Pair<>(
         new Identifier("minecraft", "snow_block"),
         createShapedRecipeJson(
             Lists.newArrayList('#'),
@@ -203,8 +203,8 @@ public class MiscRecipes {
         )
     );
 
-
-    public static Pair<Identifier, JsonObject>[] MISC_RECIPES = new Pair[]{
+    @SuppressWarnings("unchecked")
+    public static final Pair<Identifier, JsonObject>[] MISC_RECIPES = new Pair[]{
         BAMBOO_PLANKS,
         BREAD,
         BRICKS,

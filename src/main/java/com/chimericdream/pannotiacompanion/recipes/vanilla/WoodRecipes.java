@@ -8,84 +8,84 @@ import net.minecraft.util.Pair;
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createShapedRecipeJson;
 
 public class WoodRecipes {
-    public static Pair<Identifier, JsonObject> ACACIA_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> ACACIA_WOOD = new Pair<>(
         new Identifier("minecraft", "acacia_wood"),
         makeWoodRecipe(new Identifier("minecraft", "acacia_log"), new Identifier("minecraft", "acacia_wood"))
     );
-    public static Pair<Identifier, JsonObject> BIRCH_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> BIRCH_WOOD = new Pair<>(
         new Identifier("minecraft", "birch_wood"),
         makeWoodRecipe(new Identifier("minecraft", "birch_log"), new Identifier("minecraft", "birch_wood"))
     );
-    public static Pair<Identifier, JsonObject> CHERRY_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> CHERRY_WOOD = new Pair<>(
         new Identifier("minecraft", "cherry_wood"),
         makeWoodRecipe(new Identifier("minecraft", "cherry_log"), new Identifier("minecraft", "cherry_wood"))
     );
-    public static Pair<Identifier, JsonObject> CRIMSON_HYPHAE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> CRIMSON_HYPHAE = new Pair<>(
         new Identifier("minecraft", "crimson_hyphae"),
         makeWoodRecipe(new Identifier("minecraft", "crimson_stem"), new Identifier("minecraft", "crimson_hyphae"))
     );
-    public static Pair<Identifier, JsonObject> DARK_OAK_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> DARK_OAK_WOOD = new Pair<>(
         new Identifier("minecraft", "dark_oak_wood"),
         makeWoodRecipe(new Identifier("minecraft", "dark_oak_log"), new Identifier("minecraft", "dark_oak_wood"))
     );
-    public static Pair<Identifier, JsonObject> JUNGLE_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> JUNGLE_WOOD = new Pair<>(
         new Identifier("minecraft", "jungle_wood"),
         makeWoodRecipe(new Identifier("minecraft", "jungle_log"), new Identifier("minecraft", "jungle_wood"))
     );
-    public static Pair<Identifier, JsonObject> MANGROVE_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> MANGROVE_WOOD = new Pair<>(
         new Identifier("minecraft", "mangrove_wood"),
         makeWoodRecipe(new Identifier("minecraft", "mangrove_log"), new Identifier("minecraft", "mangrove_wood"))
     );
-    public static Pair<Identifier, JsonObject> OAK_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> OAK_WOOD = new Pair<>(
         new Identifier("minecraft", "oak_wood"),
         makeWoodRecipe(new Identifier("minecraft", "oak_log"), new Identifier("minecraft", "oak_wood"))
     );
-    public static Pair<Identifier, JsonObject> SPRUCE_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> SPRUCE_WOOD = new Pair<>(
         new Identifier("minecraft", "spruce_wood"),
         makeWoodRecipe(new Identifier("minecraft", "spruce_log"), new Identifier("minecraft", "spruce_wood"))
     );
-    public static Pair<Identifier, JsonObject> WARPED_HYPHAE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> WARPED_HYPHAE = new Pair<>(
         new Identifier("minecraft", "warped_hyphae"),
         makeWoodRecipe(new Identifier("minecraft", "warped_stem"), new Identifier("minecraft", "warped_hyphae"))
     );
 
-    public static Pair<Identifier, JsonObject> STRIPPED_ACACIA_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_ACACIA_WOOD = new Pair<>(
         new Identifier("minecraft", "stripped_acacia_wood"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_acacia_log"), new Identifier("minecraft", "stripped_acacia_wood"))
     );
-    public static Pair<Identifier, JsonObject> STRIPPED_BIRCH_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_BIRCH_WOOD = new Pair<>(
         new Identifier("minecraft", "stripped_birch_wood"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_birch_log"), new Identifier("minecraft", "stripped_birch_wood"))
     );
-    public static Pair<Identifier, JsonObject> STRIPPED_CHERRY_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_CHERRY_WOOD = new Pair<>(
         new Identifier("minecraft", "stripped_cherry_wood"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_cherry_log"), new Identifier("minecraft", "stripped_cherry_wood"))
     );
-    public static Pair<Identifier, JsonObject> STRIPPED_CRIMSON_HYPHAE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_CRIMSON_HYPHAE = new Pair<>(
         new Identifier("minecraft", "stripped_crimson_hyphae"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_crimson_stem"), new Identifier("minecraft", "stripped_crimson_hyphae"))
     );
-    public static Pair<Identifier, JsonObject> STRIPPED_DARK_OAK_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_DARK_OAK_WOOD = new Pair<>(
         new Identifier("minecraft", "stripped_dark_oak_wood"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_dark_oak_log"), new Identifier("minecraft", "stripped_dark_oak_wood"))
     );
-    public static Pair<Identifier, JsonObject> STRIPPED_JUNGLE_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_JUNGLE_WOOD = new Pair<>(
         new Identifier("minecraft", "stripped_jungle_wood"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_jungle_log"), new Identifier("minecraft", "stripped_jungle_wood"))
     );
-    public static Pair<Identifier, JsonObject> STRIPPED_MANGROVE_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_MANGROVE_WOOD = new Pair<>(
         new Identifier("minecraft", "stripped_mangrove_wood"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_mangrove_log"), new Identifier("minecraft", "stripped_mangrove_wood"))
     );
-    public static Pair<Identifier, JsonObject> STRIPPED_OAK_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_OAK_WOOD = new Pair<>(
         new Identifier("minecraft", "stripped_oak_wood"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_oak_log"), new Identifier("minecraft", "stripped_oak_wood"))
     );
-    public static Pair<Identifier, JsonObject> STRIPPED_SPRUCE_WOOD = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_SPRUCE_WOOD = new Pair<>(
         new Identifier("minecraft", "stripped_spruce_wood"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_spruce_log"), new Identifier("minecraft", "stripped_spruce_wood"))
     );
-    public static Pair<Identifier, JsonObject> STRIPPED_WARPED_HYPHAE = new Pair<>(
+    public static final Pair<Identifier, JsonObject> STRIPPED_WARPED_HYPHAE = new Pair<>(
         new Identifier("minecraft", "stripped_warped_hyphae"),
         makeWoodRecipe(new Identifier("minecraft", "stripped_warped_stem"), new Identifier("minecraft", "stripped_warped_hyphae"))
     );
@@ -102,7 +102,8 @@ public class WoodRecipes {
         );
     }
 
-    public static Pair<Identifier, JsonObject>[] WOOD_RECIPES = new Pair[]{
+    @SuppressWarnings("unchecked")
+    public static final Pair<Identifier, JsonObject>[] WOOD_RECIPES = new Pair[]{
         ACACIA_WOOD,
         BIRCH_WOOD,
         CHERRY_WOOD,

@@ -17,11 +17,9 @@ import static com.chimericdream.pannotiacompanion.recipes.PCRecipes.ALL_RECIPES;
 
 @Mixin(RecipeManager.class)
 public class RecipeManagerMixin {
-    @SuppressWarnings("AmbiguousMixinReference")
+    @SuppressWarnings({"AmbiguousMixinReference", "unused"})
     @Inject(method = "apply", at = @At("HEAD"))
     public void interceptApply(Map<Identifier, JsonElement> map, ResourceManager resourceManager, Profiler profiler, CallbackInfo info) {
-        Arrays.stream(ALL_RECIPES).forEach((pair) -> {
-            map.put(pair.getLeft(), pair.getRight());
-        });
+        Arrays.stream(ALL_RECIPES).forEach((pair) -> map.put(pair.getLeft(), pair.getRight()));
     }
 }

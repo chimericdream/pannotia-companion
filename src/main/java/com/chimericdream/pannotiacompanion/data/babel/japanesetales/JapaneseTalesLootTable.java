@@ -10,7 +10,7 @@ import java.util.function.BiFunction;
 import static com.chimericdream.pannotiacompanion.data.babel.japanesetales.BookList.*;
 
 public class JapaneseTalesLootTable extends AbstractBookLootTable {
-    public static String AUTHOR = "Japanese Fairy Tale";
+    public static final String AUTHOR = "Japanese Fairy Tale";
 
     public static LootPoolEntry[] getBookEntries(BiFunction<String, Pair<String, String[]>, LootPoolEntry.Builder<?>> method) {
         LootPool.Builder builder = LootPool.builder()

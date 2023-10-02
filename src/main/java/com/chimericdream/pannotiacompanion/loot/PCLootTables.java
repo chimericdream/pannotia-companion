@@ -34,15 +34,7 @@ public class PCLootTables {
                 return null;
             }
 
-            LootTable replaced;
-
-            replaced = replaceVanillaBlocks(id);
-
-            if (replaced != null) {
-                return replaced;
-            }
-
-            return null;
+            return replaceVanillaBlocks(id);
         });
 
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -619,7 +611,9 @@ public class PCLootTables {
             poolBuilders.add(TreasureGemLootTables.getRareGemLootTable());
         }
 
+        //noinspection StatementWithEmptyBody
         if (LootTables.JUNGLE_TEMPLE_DISPENSER_CHEST.equals(id)) {
+            // deliberately empty for now
         }
 
         if (LootTables.NETHER_BRIDGE_CHEST.equals(id)) {

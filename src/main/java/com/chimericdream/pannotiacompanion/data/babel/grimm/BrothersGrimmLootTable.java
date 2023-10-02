@@ -10,7 +10,7 @@ import java.util.function.BiFunction;
 import static com.chimericdream.pannotiacompanion.data.babel.grimm.BookList.*;
 
 public class BrothersGrimmLootTable extends AbstractBookLootTable {
-    public static String AUTHOR = "The Brothers Grimm";
+    public static final String AUTHOR = "The Brothers Grimm";
 
     public static LootPoolEntry[] getBookEntries(BiFunction<String, Pair<String, String[]>, LootPoolEntry.Builder<?>> method) {
         LootPool.Builder builder = LootPool.builder()

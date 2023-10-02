@@ -10,7 +10,7 @@ import java.util.function.BiFunction;
 import static com.chimericdream.pannotiacompanion.data.babel.andersen.BookList.*;
 
 public class AndersenLootTable extends AbstractBookLootTable {
-    public static String AUTHOR = "Hans Christian Andersen";
+    public static final String AUTHOR = "Hans Christian Andersen";
 
     public static LootPoolEntry[] getBookEntries(BiFunction<String, Pair<String, String[]>, LootPoolEntry.Builder<?>> method) {
         LootPool.Builder builder = LootPool.builder()
