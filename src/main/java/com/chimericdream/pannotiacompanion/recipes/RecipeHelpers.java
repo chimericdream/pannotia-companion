@@ -175,6 +175,14 @@ public class RecipeHelpers {
         return createSmeltingRecipeJson(ingredient, output, cookingTime, experience, null, null);
     }
 
+    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime) {
+        return createSmeltingRecipeJson(ingredient, output, cookingTime, 0.1f, null, null);
+    }
+
+    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output) {
+        return createSmeltingRecipeJson(ingredient, output, 200, 0.1f, null, null);
+    }
+
     public static JsonObject createStonecuttingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count) {
         JsonObject json = new JsonObject();
         json.addProperty("type", "minecraft:stonecutting");

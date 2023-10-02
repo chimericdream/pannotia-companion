@@ -52,6 +52,7 @@ public class MoreDyesRecipes {
             new Identifier("minecraft", "orange_dye")
         )
     );
+
     @SuppressWarnings("unchecked")
     public static final Pair<Identifier, JsonObject>[] DYE_RECIPES = new Pair[]{
         BROWN_DYE_FROM_MUSHROOMS,
