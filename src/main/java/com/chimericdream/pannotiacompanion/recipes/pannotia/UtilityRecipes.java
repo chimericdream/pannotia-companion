@@ -9,6 +9,40 @@ import net.minecraft.util.Pair;
 import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.*;
 
 public class UtilityRecipes {
+    public static final Pair<Identifier, JsonObject> ACACIA_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "acacia_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "acacia_log"),
+            new Identifier("minecraft", "acacia_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> AMETHYST_SHARDS_FROM_BLOCK = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "amethyst_shards_from_block"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "amethyst_block"))),
+            new Identifier("minecraft", "amethyst_shard"),
+            4
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> BAMBOO_FROM_BAMBOO_BLOCK = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "bamboo_from_bamboo_block"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("tag", new Identifier("minecraft", "bamboo_blocks"))),
+            new Identifier("minecraft", "bamboo"),
+            9
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> BIRCH_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "birch_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "birch_log"),
+            new Identifier("minecraft", "birch_wood")
+        )
+    );
+
     public static final Pair<Identifier, JsonObject> BLACKSTONE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "blackstone"),
         createShapedRecipeJson(
@@ -51,6 +85,14 @@ public class UtilityRecipes {
         )
     );
 
+    public static final Pair<Identifier, JsonObject> CHERRY_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "cherry_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "cherry_log"),
+            new Identifier("minecraft", "cherry_wood")
+        )
+    );
+
     public static final Pair<Identifier, JsonObject> CHESTS_FROM_BAMBOO_BLOCKS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "chests_from_bamboo_blocks"),
         createShapedRecipeJson(
@@ -71,6 +113,15 @@ public class UtilityRecipes {
             Lists.newArrayList("tag"),
             Lists.newArrayList("###", "# #", "###"),
             new Identifier("minecraft", "chest"),
+            4
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> CLAY_BALLS_FROM_CLAY = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "clay_balls_from_clay"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "clay"))),
+            new Identifier("minecraft", "clay_ball"),
             4
         )
     );
@@ -103,6 +154,30 @@ public class UtilityRecipes {
         )
     );
 
+    public static final Pair<Identifier, JsonObject> COPPER_BLOCK_FROM_CUT_COPPER_BLASTING = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "copper_block_from_cut_copper_blasting"),
+        createBlastingRecipeJson(
+            new Pair<>("item", new Identifier("minecraft", "cut_copper")),
+            new Identifier("minecraft", "copper_block")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> CRIMSON_STEM_FROM_HYPHAE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "crimson_stem_from_hyphae"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "crimson_stem"),
+            new Identifier("minecraft", "crimson_hyphae")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> DARK_OAK_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "dark_oak_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "dark_oak_log"),
+            new Identifier("minecraft", "dark_oak_wood")
+        )
+    );
+
     public static final Pair<Identifier, JsonObject> DISPENSER_FROM_DROPPER = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "dispenser_from_dropper"),
         createShapedRecipeJson(
@@ -128,6 +203,14 @@ public class UtilityRecipes {
             ),
             new Identifier("minecraft", "dispenser"),
             "dispenser"
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> EXPOSED_COPPER_FROM_EXPOSED_CUT_COPPER_BLASTING = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "exposed_copper_from_exposed_cut_copper_blasting"),
+        createBlastingRecipeJson(
+            new Pair<>("item", new Identifier("minecraft", "exposed_cut_copper")),
+            new Identifier("minecraft", "exposed_copper")
         )
     );
 
@@ -172,6 +255,32 @@ public class UtilityRecipes {
         )
     );
 
+    public static final Pair<Identifier, JsonObject> HONEYCOMB_FROM_HONEYCOMB_BLOCK = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "honeycomb_from_honeycomb_block"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "honeycomb_block"))),
+            new Identifier("minecraft", "honeycomb"),
+            4
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> ICE_FROM_PACKED_ICE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "ice_from_packed_ice"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "packed_ice"))),
+            new Identifier("minecraft", "ice"),
+            9
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> JUNGLE_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "jungle_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "jungle_log"),
+            new Identifier("minecraft", "jungle_wood")
+        )
+    );
+
     public static final Pair<Identifier, JsonObject> LEATHER_FROM_SMELTING_ROTTEN_FLESH = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "leather_from_smelting_rotten_flesh"),
         createSmeltingRecipeJson(
@@ -179,6 +288,14 @@ public class UtilityRecipes {
             new Identifier("minecraft", "leather"),
             200,
             1f
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> MANGROVE_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "mangrove_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "mangrove_log"),
+            new Identifier("minecraft", "mangrove_wood")
         )
     );
 
@@ -192,6 +309,40 @@ public class UtilityRecipes {
             ),
             new Identifier("minecraft", "moss_block"),
             2
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> NETHER_WART_FROM_BLOCK = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "nether_wart_from_block"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "nether_wart_block"))),
+            new Identifier("minecraft", "nether_wart"),
+            9
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> OAK_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "oak_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "oak_log"),
+            new Identifier("minecraft", "oak_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> OXIDIZED_COPPER_FROM_OXIDIZED_CUT_COPPER_BLASTING = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "oxidized_copper_from_oxidized_cut_copper_blasting"),
+        createBlastingRecipeJson(
+            new Pair<>("item", new Identifier("minecraft", "oxidized_cut_copper")),
+            new Identifier("minecraft", "oxidized_copper")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> PACKED_ICE_FROM_BLUE_ICE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "packed_ice_from_blue_ice"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "blue_ice"))),
+            new Identifier("minecraft", "packed_ice"),
+            9
         )
     );
 
@@ -246,6 +397,24 @@ public class UtilityRecipes {
         )
     );
 
+    public static final Pair<Identifier, JsonObject> QUARTZ_FROM_QUARTZ_BLOCK = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "quartz_from_quartz_block"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "quartz_block"))),
+            new Identifier("minecraft", "quartz"),
+            4
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> RED_SAND_FROM_RED_SANDSTONE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "red_sand_from_red_sandstone"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "red_sandstone"))),
+            new Identifier("minecraft", "red_sand"),
+            4
+        )
+    );
+
     public static final Pair<Identifier, JsonObject> REDSTONE_TORCH_FROM_TORCH = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "redstone_torch_from_torch"),
         createShapelessRecipeJson(
@@ -269,6 +438,15 @@ public class UtilityRecipes {
             Lists.newArrayList("item", "item", "item"),
             Lists.newArrayList("y y", "zyz", "xxx"),
             new Identifier("minecraft", "repeater")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> SAND_FROM_SANDSTONE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "sand_from_sandstone"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "sandstone"))),
+            new Identifier("minecraft", "sand"),
+            4
         )
     );
 
@@ -309,6 +487,14 @@ public class UtilityRecipes {
         )
     );
 
+    public static final Pair<Identifier, JsonObject> SPRUCE_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "spruce_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "spruce_log"),
+            new Identifier("minecraft", "spruce_wood")
+        )
+    );
+
     public static final Pair<Identifier, JsonObject> STICKS_FROM_LOGS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "sticks_from_logs"),
         createShapedRecipeJson(
@@ -318,6 +504,95 @@ public class UtilityRecipes {
             Lists.newArrayList("#", "#"),
             new Identifier("minecraft", "stick"),
             16
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRING_FROM_WOOL = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "string_from_wool"),
+        createShapelessRecipeJson(
+            Lists.newArrayList(new Pair<>("tag", new Identifier("minecraft", "wool"))),
+            new Identifier("minecraft", "string"),
+            4
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_ACACIA_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_acacia_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_acacia_log"),
+            new Identifier("minecraft", "stripped_acacia_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_BIRCH_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_birch_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_birch_log"),
+            new Identifier("minecraft", "stripped_birch_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_CHERRY_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_cherry_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_cherry_log"),
+            new Identifier("minecraft", "stripped_cherry_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_CRIMSON_STEM_FROM_HYPHAE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_crimson_stem_from_hyphae"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_crimson_stem"),
+            new Identifier("minecraft", "stripped_crimson_hyphae")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_DARK_OAK_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_dark_oak_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_dark_oak_log"),
+            new Identifier("minecraft", "stripped_dark_oak_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_JUNGLE_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_jungle_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_jungle_log"),
+            new Identifier("minecraft", "stripped_jungle_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_MANGROVE_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_mangrove_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_mangrove_log"),
+            new Identifier("minecraft", "stripped_mangrove_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_OAK_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_oak_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_oak_log"),
+            new Identifier("minecraft", "stripped_oak_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_SPRUCE_LOG_FROM_WOOD = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_spruce_log_from_wood"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_spruce_log"),
+            new Identifier("minecraft", "stripped_spruce_wood")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> STRIPPED_WARPED_STEM_FROM_HYPHAE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "stripped_warped_stem_from_hyphae"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "stripped_warped_stem"),
+            new Identifier("minecraft", "stripped_warped_hyphae")
         )
     );
 
@@ -335,32 +610,94 @@ public class UtilityRecipes {
         )
     );
 
+    public static final Pair<Identifier, JsonObject> WARPED_STEM_FROM_HYPHAE = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "warped_stem_from_hyphae"),
+        makeLogFromWoodRecipeJson(
+            new Identifier("minecraft", "warped_stem"),
+            new Identifier("minecraft", "warped_hyphae")
+        )
+    );
+
+    public static final Pair<Identifier, JsonObject> WEATHERED_COPPER_FROM_WEATHERED_CUT_COPPER_BLASTING = new Pair<>(
+        new Identifier(ModInfo.MOD_ID, "weathered_copper_from_weathered_cut_copper_blasting"),
+        createBlastingRecipeJson(
+            new Pair<>("item", new Identifier("minecraft", "weathered_cut_copper")),
+            new Identifier("minecraft", "weathered_copper")
+        )
+    );
+
+    public static JsonObject makeLogFromWoodRecipeJson(Identifier logId, Identifier woodId) {
+        return createShapedRecipeJson(
+            Lists.newArrayList('#'),
+            Lists.newArrayList(woodId),
+            Lists.newArrayList("item"),
+            Lists.newArrayList("##", "##"),
+            logId,
+            4
+        );
+    }
+
     @SuppressWarnings("unchecked")
     public static final Pair<Identifier, JsonObject>[] UTILITY_RECIPES = new Pair[]{
+        ACACIA_LOG_FROM_WOOD,
+        AMETHYST_SHARDS_FROM_BLOCK,
+        BAMBOO_FROM_BAMBOO_BLOCK,
+        BIRCH_LOG_FROM_WOOD,
         BLACKSTONE,
         BLACKSTONE_MIRROR,
         BONE_BLOCK_FROM_BONES,
+        CHERRY_LOG_FROM_WOOD,
         CHESTS_FROM_BAMBOO_BLOCKS,
         CHESTS_FROM_LOGS,
+        CLAY_BALLS_FROM_CLAY,
         CLAY_BLOCK_FROM_SAND_AND_GRAVEL,
         COBBLED_DEEPSLATE,
+        COPPER_BLOCK_FROM_CUT_COPPER_BLASTING,
+        CRIMSON_STEM_FROM_HYPHAE,
+        DARK_OAK_LOG_FROM_WOOD,
         DISPENSER_FROM_DROPPER,
         DISPENSER_FROM_DROPPER_ALT,
+        EXPOSED_COPPER_FROM_EXPOSED_CUT_COPPER_BLASTING,
         FASTER_COPPER_OXIDIZATION,
         GRAVEL_FROM_FLINT,
         HEART_OF_THE_SEA,
+        HONEYCOMB_FROM_HONEYCOMB_BLOCK,
+        ICE_FROM_PACKED_ICE,
+        JUNGLE_LOG_FROM_WOOD,
         LEATHER_FROM_SMELTING_ROTTEN_FLESH,
+        MANGROVE_LOG_FROM_WOOD,
         MOSS_BLOCKS_FROM_CARPET,
+        NETHER_WART_FROM_BLOCK,
+        OAK_LOG_FROM_WOOD,
+        OXIDIZED_COPPER_FROM_OXIDIZED_CUT_COPPER_BLASTING,
+        PACKED_ICE_FROM_BLUE_ICE,
         POLISHED_BLACKSTONE,
         POLISHED_BLACKSTONE_MIRROR,
         POLISHED_DEEPSLATE_FROM_DEEPSLATE,
         PRISMARINE_SHARDS_FROM_BRICKS,
+        QUARTZ_FROM_QUARTZ_BLOCK,
+        RED_SAND_FROM_RED_SANDSTONE,
         REDSTONE_TORCH_FROM_TORCH,
         REPEATER_PLUS_TORCHES,
+        SAND_FROM_SANDSTONE,
         SMALL_DRIPLEAF,
         SNOW_BLOCK_FROM_LAYERS,
         SPONGE,
+        SPRUCE_LOG_FROM_WOOD,
         STICKS_FROM_LOGS,
-        TRAPPED_CHEST
+        STRING_FROM_WOOL,
+        STRIPPED_ACACIA_LOG_FROM_WOOD,
+        STRIPPED_BIRCH_LOG_FROM_WOOD,
+        STRIPPED_CHERRY_LOG_FROM_WOOD,
+        STRIPPED_CRIMSON_STEM_FROM_HYPHAE,
+        STRIPPED_DARK_OAK_LOG_FROM_WOOD,
+        STRIPPED_JUNGLE_LOG_FROM_WOOD,
+        STRIPPED_MANGROVE_LOG_FROM_WOOD,
+        STRIPPED_OAK_LOG_FROM_WOOD,
+        STRIPPED_SPRUCE_LOG_FROM_WOOD,
+        STRIPPED_WARPED_STEM_FROM_HYPHAE,
+        TRAPPED_CHEST,
+        WARPED_STEM_FROM_HYPHAE,
+        WEATHERED_COPPER_FROM_WEATHERED_CUT_COPPER_BLASTING
     };
 }

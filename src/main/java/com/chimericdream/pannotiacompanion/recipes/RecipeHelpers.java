@@ -155,6 +155,14 @@ public class RecipeHelpers {
         return createBlastingRecipeJson(ingredient, output, cookingTime, experience, null, null);
     }
 
+    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime) {
+        return createBlastingRecipeJson(ingredient, output, cookingTime, 0.1f, null, null);
+    }
+
+    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output) {
+        return createBlastingRecipeJson(ingredient, output, 100, 0.1f, null, null);
+    }
+
     public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime, float experience, String group, String category) {
         return createCookingRecipeJson(new Identifier("minecraft", "smelting"), ingredient, output, cookingTime, experience, group, category);
     }
