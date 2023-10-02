@@ -29,7 +29,7 @@ sourceSets {
 }
 
 loom {
-	accessWidenerPath = file("src/main/resources/${project.modid}.accesswidener") as RegularFile
+	accessWidenerPath = file("src/main/resources/${project.modid}.accesswidener")
 
     splitEnvironmentSourceSets()
 
