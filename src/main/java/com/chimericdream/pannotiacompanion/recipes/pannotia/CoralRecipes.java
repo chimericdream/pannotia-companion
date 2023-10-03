@@ -11,77 +11,77 @@ import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createSh
 
 public class CoralRecipes {
     public static final Pair<Identifier, JsonObject> BRAIN_CORAL_BLOCK = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "brain_coral_block"),
+        new Identifier(ModInfo.MOD_ID, "coral/brain_coral_block"),
         makeCoralBlockRecipe("brain")
     );
 
     public static final Pair<Identifier, JsonObject> BRAIN_CORAL_FAN_FROM_BRAIN_CORAL = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "brain_coral_fan_from_brain_coral"),
+        new Identifier(ModInfo.MOD_ID, "coral/brain_coral_fan_from_brain_coral"),
         makeCoralConversionRecipe("brain", false)
     );
 
     public static final Pair<Identifier, JsonObject> BRAIN_CORAL_FROM_BRAIN_CORAL_FAN = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "brain_coral_from_brain_coral_fan"),
+        new Identifier(ModInfo.MOD_ID, "coral/brain_coral_from_brain_coral_fan"),
         makeCoralConversionRecipe("brain", true)
     );
 
     public static final Pair<Identifier, JsonObject> BUBBLE_CORAL_BLOCK = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "bubble_coral_block"),
+        new Identifier(ModInfo.MOD_ID, "coral/bubble_coral_block"),
         makeCoralBlockRecipe("bubble")
     );
 
     public static final Pair<Identifier, JsonObject> BUBBLE_CORAL_FAN_FROM_BUBBLE_CORAL = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "bubble_coral_fan_from_bubble_coral"),
+        new Identifier(ModInfo.MOD_ID, "coral/bubble_coral_fan_from_bubble_coral"),
         makeCoralConversionRecipe("bubble", false)
     );
 
     public static final Pair<Identifier, JsonObject> BUBBLE_CORAL_FROM_BUBBLE_CORAL_FAN = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "bubble_coral_from_bubble_coral_fan"),
+        new Identifier(ModInfo.MOD_ID, "coral/bubble_coral_from_bubble_coral_fan"),
         makeCoralConversionRecipe("bubble", true)
     );
 
     public static final Pair<Identifier, JsonObject> FIRE_CORAL_BLOCK = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "fire_coral_block"),
+        new Identifier(ModInfo.MOD_ID, "coral/fire_coral_block"),
         makeCoralBlockRecipe("fire")
     );
 
     public static final Pair<Identifier, JsonObject> FIRE_CORAL_FAN_FROM_FIRE_CORAL = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "fire_coral_fan_from_fire_coral"),
+        new Identifier(ModInfo.MOD_ID, "coral/fire_coral_fan_from_fire_coral"),
         makeCoralConversionRecipe("fire", false)
     );
 
     public static final Pair<Identifier, JsonObject> FIRE_CORAL_FROM_FIRE_CORAL_FAN = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "fire_coral_from_fire_coral_fan"),
+        new Identifier(ModInfo.MOD_ID, "coral/fire_coral_from_fire_coral_fan"),
         makeCoralConversionRecipe("fire", true)
     );
 
     public static final Pair<Identifier, JsonObject> HORN_CORAL_BLOCK = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "horn_coral_block"),
+        new Identifier(ModInfo.MOD_ID, "coral/horn_coral_block"),
         makeCoralBlockRecipe("horn")
     );
 
     public static final Pair<Identifier, JsonObject> HORN_CORAL_FAN_FROM_HORN_CORAL = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "horn_coral_fan_from_horn_coral"),
+        new Identifier(ModInfo.MOD_ID, "coral/horn_coral_fan_from_horn_coral"),
         makeCoralConversionRecipe("horn", false)
     );
 
     public static final Pair<Identifier, JsonObject> HORN_CORAL_FROM_HORN_CORAL_FAN = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "horn_coral_from_horn_coral_fan"),
+        new Identifier(ModInfo.MOD_ID, "coral/horn_coral_from_horn_coral_fan"),
         makeCoralConversionRecipe("horn", true)
     );
 
     public static final Pair<Identifier, JsonObject> TUBE_CORAL_BLOCK = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "tube_coral_block"),
+        new Identifier(ModInfo.MOD_ID, "coral/tube_coral_block"),
         makeCoralBlockRecipe("tube")
     );
 
     public static final Pair<Identifier, JsonObject> TUBE_CORAL_FAN_FROM_TUBE_CORAL = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "tube_coral_fan_from_tube_coral"),
+        new Identifier(ModInfo.MOD_ID, "coral/tube_coral_fan_from_tube_coral"),
         makeCoralConversionRecipe("tube", false)
     );
 
     public static final Pair<Identifier, JsonObject> TUBE_CORAL_FROM_TUBE_CORAL_FAN = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "tube_coral_from_tube_coral_fan"),
+        new Identifier(ModInfo.MOD_ID, "coral/tube_coral_from_tube_coral_fan"),
         makeCoralConversionRecipe("tube", true)
     );
 

@@ -13,6 +13,7 @@ import static com.chimericdream.pannotiacompanion.recipes.pannotia.MoreDyesRecip
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.PowderFromConcreteBlastingRecipes.POWDER_FROM_CONCRETE_RECIPES;
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.PowderToGlassRecipes.POWDER_TO_GLASS_RECIPES;
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.RawMetalBlastingRecipes.RAW_METAL_BLASTING_RECIPES;
+import static com.chimericdream.pannotiacompanion.recipes.pannotia.RecyclingRecipes.RECYCLING_RECIPES;
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.SandstoneDyeingRecipes.SANDSTONE_DYEING_RECIPES;
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.StonecuttingRecipes.STONECUTTING_RECIPES;
 import static com.chimericdream.pannotiacompanion.recipes.pannotia.UtilityRecipes.UTILITY_RECIPES;
@@ -28,6 +29,7 @@ public class PannotiaRecipes {
         overrides.addAll(Arrays.asList(POWDER_FROM_CONCRETE_RECIPES));
         overrides.addAll(Arrays.asList(POWDER_TO_GLASS_RECIPES));
         overrides.addAll(Arrays.asList(RAW_METAL_BLASTING_RECIPES));
+        overrides.addAll(Arrays.asList(RECYCLING_RECIPES));
         overrides.addAll(Arrays.asList(SANDSTONE_DYEING_RECIPES));
         overrides.addAll(Arrays.asList(STONECUTTING_RECIPES));
         overrides.addAll(Arrays.asList(UTILITY_RECIPES));

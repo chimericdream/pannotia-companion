@@ -10,7 +10,7 @@ import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createSh
 
 public class SandstoneDyeingRecipes {
     public static final Pair<Identifier, JsonObject> RED_SAND = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "red_sand"),
+        new Identifier(ModInfo.MOD_ID, "sandstone_dyeing/red_sand"),
         createShapelessRecipeJson(
             Lists.newArrayList(
                 new Pair<>("item", new Identifier("minecraft", "sand")),
@@ -29,7 +29,7 @@ public class SandstoneDyeingRecipes {
     );
 
     public static final Pair<Identifier, JsonObject> RED_SANDSTONE = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "red_sandstone"),
+        new Identifier(ModInfo.MOD_ID, "sandstone_dyeing/red_sandstone"),
         createShapelessRecipeJson(
             Lists.newArrayList(
                 new Pair<>("item", new Identifier("minecraft", "sandstone")),
@@ -42,7 +42,7 @@ public class SandstoneDyeingRecipes {
     );
 
     public static final Pair<Identifier, JsonObject> SAND_FROM_RED_SAND = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "sand_from_red_sand"),
+        new Identifier(ModInfo.MOD_ID, "sandstone_dyeing/sand_from_red_sand"),
         createShapelessRecipeJson(
             Lists.newArrayList(
                 new Pair<>("item", new Identifier("minecraft", "red_sand")),
@@ -61,7 +61,7 @@ public class SandstoneDyeingRecipes {
     );
 
     public static final Pair<Identifier, JsonObject> SANDSTONE_FROM_RED_SANDSTONE = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "sandstone_from_red_sandstone"),
+        new Identifier(ModInfo.MOD_ID, "sandstone_dyeing/sandstone_from_red_sandstone"),
         createShapelessRecipeJson(
             Lists.newArrayList(
                 new Pair<>("item", new Identifier("minecraft", "red_sandstone")),
@@ -74,7 +74,7 @@ public class SandstoneDyeingRecipes {
     );
 
     public static final Pair<Identifier, JsonObject> SMOOTH_RED_SANDSTONE = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "smooth_red_sandstone"),
+        new Identifier(ModInfo.MOD_ID, "sandstone_dyeing/smooth_red_sandstone"),
         createShapelessRecipeJson(
             Lists.newArrayList(
                 new Pair<>("item", new Identifier("minecraft", "smooth_sandstone")),
@@ -87,7 +87,7 @@ public class SandstoneDyeingRecipes {
     );
 
     public static final Pair<Identifier, JsonObject> SMOOTH_SANDSTONE_FROM_SMOOTH_RED_SANDSTONE = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "smooth_sandstone_from_smooth_red_sandstone"),
+        new Identifier(ModInfo.MOD_ID, "sandstone_dyeing/smooth_sandstone_from_smooth_red_sandstone"),
         createShapelessRecipeJson(
             Lists.newArrayList(
                 new Pair<>("item", new Identifier("minecraft", "smooth_red_sandstone")),

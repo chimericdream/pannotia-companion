@@ -10,7 +10,7 @@ import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createSh
 
 public class MoreDyesRecipes {
     public static final Pair<Identifier, JsonObject> BROWN_DYE_FROM_MUSHROOMS = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "brown_dye_from_mushrooms"),
+        new Identifier(ModInfo.MOD_ID, "more_dyes/brown_dye_from_mushrooms"),
         createShapelessRecipeJson(
             Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "brown_mushroom"))),
             new Identifier("minecraft", "brown_dye")
@@ -18,7 +18,7 @@ public class MoreDyesRecipes {
     );
 
     public static final Pair<Identifier, JsonObject> CYAN_DYE_FROM_TWISTING_VINES = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "cyan_dye_from_twisting_vines"),
+        new Identifier(ModInfo.MOD_ID, "more_dyes/cyan_dye_from_twisting_vines"),
         createShapelessRecipeJson(
             Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "twisting_vines"))),
             new Identifier("minecraft", "cyan_dye")
@@ -26,7 +26,7 @@ public class MoreDyesRecipes {
     );
 
     public static final Pair<Identifier, JsonObject> GREEN_DYE_FROM_BIG_DRIPLEAF = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "green_dye_from_big_dripleaf"),
+        new Identifier(ModInfo.MOD_ID, "more_dyes/green_dye_from_big_dripleaf"),
         createShapelessRecipeJson(
             Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "big_dripleaf"))),
             new Identifier("minecraft", "green_dye")
@@ -34,7 +34,7 @@ public class MoreDyesRecipes {
     );
 
     public static final Pair<Identifier, JsonObject> GREEN_DYE_FROM_YELLOW_AND_BLUE = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "green_dye_from_yellow_and_blue"),
+        new Identifier(ModInfo.MOD_ID, "more_dyes/green_dye_from_yellow_and_blue"),
         createShapelessRecipeJson(
             Lists.newArrayList(
                 new Pair<>("item", new Identifier("minecraft", "blue_dye")),
@@ -46,7 +46,7 @@ public class MoreDyesRecipes {
     );
 
     public static final Pair<Identifier, JsonObject> ORANGE_DYE_FROM_CARROT = new Pair<>(
-        new Identifier(ModInfo.MOD_ID, "orange_dye_from_carrot"),
+        new Identifier(ModInfo.MOD_ID, "more_dyes/orange_dye_from_carrot"),
         createShapelessRecipeJson(
             Lists.newArrayList(new Pair<>("item", new Identifier("minecraft", "carrot"))),
             new Identifier("minecraft", "orange_dye")

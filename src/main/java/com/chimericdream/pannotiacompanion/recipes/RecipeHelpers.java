@@ -183,6 +183,33 @@ public class RecipeHelpers {
         return createSmeltingRecipeJson(ingredient, output, 200, 0.1f, null, null);
     }
 
+    public static JsonObject createSmeltingRecipeWithOutputJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime, float experience, String group, String category) {
+        JsonObject recipe = createSmeltingRecipeJson(ingredient, output, cookingTime, experience, group, category);
+        recipe.addProperty("count", count);
+
+        return recipe;
+    }
+
+    public static JsonObject createSmeltingRecipeWithOutputJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime, float experience, String group) {
+        return createSmeltingRecipeWithOutputJson(ingredient, output, count, cookingTime, experience, group, null);
+    }
+
+    public static JsonObject createSmeltingRecipeWithOutputJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime, float experience) {
+        return createSmeltingRecipeWithOutputJson(ingredient, output, count, cookingTime, experience, null, null);
+    }
+
+    public static JsonObject createSmeltingRecipeWithOutputJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime) {
+        return createSmeltingRecipeWithOutputJson(ingredient, output, count, cookingTime, 0.1f, null, null);
+    }
+
+    public static JsonObject createSmeltingRecipeWithOutputJson(Pair<String, Identifier> ingredient, Identifier output, int count) {
+        return createSmeltingRecipeWithOutputJson(ingredient, output, count, 200, 0.1f, null, null);
+    }
+
+    public static JsonObject createSmeltingRecipeWithOutputJson(Pair<String, Identifier> ingredient, Identifier output) {
+        return createSmeltingRecipeWithOutputJson(ingredient, output, 1, 200, 0.1f, null, null);
+    }
+
     public static JsonObject createStonecuttingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count) {
         JsonObject json = new JsonObject();
         json.addProperty("type", "minecraft:stonecutting");
