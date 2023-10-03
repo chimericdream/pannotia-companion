@@ -285,9 +285,7 @@ public class UtilityRecipes {
         new Identifier(ModInfo.MOD_ID, "utility/leather_from_smelting_rotten_flesh"),
         createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "rotten_flesh")),
-            new Identifier("minecraft", "leather"),
-            200,
-            1f
+            new Identifier("minecraft", "leather")
         )
     );
 
