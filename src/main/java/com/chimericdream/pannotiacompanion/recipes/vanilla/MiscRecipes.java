@@ -64,7 +64,6 @@ public class MiscRecipes {
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "gold_nugget")),
             new Identifier("minecraft", "gold_nugget"),
-            1,
             100,
             0.1f,
             null,
@@ -77,7 +76,6 @@ public class MiscRecipes {
         createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "gold_nugget")),
             new Identifier("minecraft", "gold_nugget"),
-            1,
             200,
             0.1f,
             null,
@@ -90,7 +88,6 @@ public class MiscRecipes {
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_nugget")),
             new Identifier("minecraft", "iron_nugget"),
-            1,
             100,
             0.1f,
             null,
@@ -103,7 +100,6 @@ public class MiscRecipes {
         createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_nugget")),
             new Identifier("minecraft", "iron_nugget"),
-            1,
             200,
             0.1f,
             null,

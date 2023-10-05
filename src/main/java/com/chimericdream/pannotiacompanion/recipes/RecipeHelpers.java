@@ -143,64 +143,44 @@ public class RecipeHelpers {
         return json;
     }
 
-    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime, float experience, String group, String category) {
-        JsonObject json = createCookingRecipeJson(new Identifier("minecraft", "blasting"), ingredient, output, cookingTime, experience, group, category);
-
-        if (count > 1) {
-            json.addProperty("count", count);
-        }
-
-        return json;
+    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime, float experience, String group, String category) {
+        return createCookingRecipeJson(new Identifier("minecraft", "blasting"), ingredient, output, cookingTime, experience, group, category);
     }
 
-    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime, float experience, String group) {
-        return createBlastingRecipeJson(ingredient, output, count, cookingTime, experience, group, null);
+    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime, float experience, String group) {
+        return createBlastingRecipeJson(ingredient, output, cookingTime, experience, group, null);
     }
 
-    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime, float experience) {
-        return createBlastingRecipeJson(ingredient, output, count, cookingTime, experience, null, null);
+    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime, float experience) {
+        return createBlastingRecipeJson(ingredient, output, cookingTime, experience, null, null);
     }
 
-    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime) {
-        return createBlastingRecipeJson(ingredient, output, count, cookingTime, 0.1f, null, null);
-    }
-
-    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count) {
-        return createBlastingRecipeJson(ingredient, output, count, 100, 0.1f, null, null);
+    public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime) {
+        return createBlastingRecipeJson(ingredient, output, cookingTime, 0.1f, null, null);
     }
 
     public static JsonObject createBlastingRecipeJson(Pair<String, Identifier> ingredient, Identifier output) {
-        return createBlastingRecipeJson(ingredient, output, 1, 100, 0.1f, null, null);
+        return createBlastingRecipeJson(ingredient, output, 100, 0.1f, null, null);
     }
 
-    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime, float experience, String group, String category) {
-        JsonObject json = createCookingRecipeJson(new Identifier("minecraft", "smelting"), ingredient, output, cookingTime, experience, group, category);
-
-        if (count > 1) {
-            json.addProperty("count", count);
-        }
-
-        return json;
+    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime, float experience, String group, String category) {
+        return createCookingRecipeJson(new Identifier("minecraft", "smelting"), ingredient, output, cookingTime, experience, group, category);
     }
 
-    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime, float experience, String group) {
-        return createSmeltingRecipeJson(ingredient, output, count, cookingTime, experience, group, null);
+    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime, float experience, String group) {
+        return createSmeltingRecipeJson(ingredient, output, cookingTime, experience, group, null);
     }
 
-    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime, float experience) {
-        return createSmeltingRecipeJson(ingredient, output, count, cookingTime, experience, null, null);
+    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime, float experience) {
+        return createSmeltingRecipeJson(ingredient, output, cookingTime, experience, null, null);
     }
 
-    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count, int cookingTime) {
-        return createSmeltingRecipeJson(ingredient, output, count, cookingTime, 0.1f, null, null);
-    }
-
-    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count) {
-        return createSmeltingRecipeJson(ingredient, output, count, 200, 0.1f, null, null);
+    public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int cookingTime) {
+        return createSmeltingRecipeJson(ingredient, output, cookingTime, 0.1f, null, null);
     }
 
     public static JsonObject createSmeltingRecipeJson(Pair<String, Identifier> ingredient, Identifier output) {
-        return createSmeltingRecipeJson(ingredient, output, 1, 200, 0.1f, null, null);
+        return createSmeltingRecipeJson(ingredient, output, 200, 0.1f, null, null);
     }
 
     public static JsonObject createStonecuttingRecipeJson(Pair<String, Identifier> ingredient, Identifier output, int count) {

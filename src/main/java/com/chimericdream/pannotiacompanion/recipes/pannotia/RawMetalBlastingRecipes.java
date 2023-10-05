@@ -13,7 +13,6 @@ public class RawMetalBlastingRecipes {
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "raw_copper_block")),
             new Identifier("minecraft", "copper_block"),
-            1,
             100,
             0.7f
         )
@@ -24,7 +23,6 @@ public class RawMetalBlastingRecipes {
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "raw_gold_block")),
             new Identifier("minecraft", "gold_block"),
-            1,
             100,
             0.7f
         )
@@ -35,7 +33,6 @@ public class RawMetalBlastingRecipes {
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "raw_iron_block")),
             new Identifier("minecraft", "iron_block"),
-            1,
             100,
             0.7f
         )
@@ -46,7 +43,6 @@ public class RawMetalBlastingRecipes {
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "copper_block")),
             new Identifier("minecraft", "raw_copper_block"),
-            1,
             100,
             0.7f
         )
@@ -65,7 +61,6 @@ public class RawMetalBlastingRecipes {
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "gold_block")),
             new Identifier("minecraft", "raw_gold_block"),
-            1,
             100,
             0.7f
         )
@@ -92,7 +87,6 @@ public class RawMetalBlastingRecipes {
         createBlastingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_block")),
             new Identifier("minecraft", "raw_iron_block"),
-            1,
             100,
             0.7f
         )
