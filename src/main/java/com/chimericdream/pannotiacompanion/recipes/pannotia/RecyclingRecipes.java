@@ -1,7 +1,6 @@
 package com.chimericdream.pannotiacompanion.recipes.pannotia;
 
 import com.chimericdream.pannotiacompanion.ModInfo;
-import com.chimericdream.pannotiacompanion.recipes.RecipeHelpers;
 import com.google.gson.JsonObject;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Pair;
@@ -11,7 +10,7 @@ import static com.chimericdream.pannotiacompanion.recipes.RecipeHelpers.createSm
 public class RecyclingRecipes {
     public static final Pair<Identifier, JsonObject> CHAINMAIL_BOOTS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/chainmail_boots"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "chainmail_boots")),
             new Identifier("minecraft", "chain"),
             2
@@ -20,7 +19,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> CHAINMAIL_CHESTPLATE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/chainmail_chestplate"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "chainmail_chestplate")),
             new Identifier("minecraft", "chain"),
             4
@@ -29,7 +28,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> CHAINMAIL_HELMET = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/chainmail_helmet"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "chainmail_helmet")),
             new Identifier("minecraft", "chain"),
             2
@@ -38,7 +37,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> CHAINMAIL_LEGGINGS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/chainmail_leggings"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "chainmail_leggings")),
             new Identifier("minecraft", "chain"),
             3
@@ -63,7 +62,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> DIAMOND_CHESTPLATE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/diamond_chestplate"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "diamond_chestplate")),
             new Identifier("minecraft", "diamond"),
             3
@@ -72,7 +71,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> DIAMOND_HELMET = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/diamond_helmet"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "diamond_helmet")),
             new Identifier("minecraft", "diamond"),
             2
@@ -81,7 +80,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> DIAMOND_HORSE_ARMOR = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/diamond_horse_armor"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "diamond_horse_armor")),
             new Identifier("minecraft", "diamond"),
             2
@@ -90,7 +89,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> DIAMOND_LEGGINGS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/diamond_leggings"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "diamond_leggings")),
             new Identifier("minecraft", "diamond"),
             2
@@ -107,7 +106,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> GOLD_HORSE_ARMOR = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/gold_horse_armor"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "gold_horse_armor")),
             new Identifier("minecraft", "gold_ingot"),
             2
@@ -132,7 +131,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> GOLDEN_CHESTPLATE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/golden_chestplate"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "golden_chestplate")),
             new Identifier("minecraft", "gold_ingot"),
             2
@@ -149,7 +148,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> GOLDEN_HOE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/golden_hoe"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "golden_hoe")),
             new Identifier("minecraft", "gold_nugget"),
             6
@@ -158,7 +157,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> GOLDEN_LEGGINGS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/golden_leggings"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "golden_leggings")),
             new Identifier("minecraft", "gold_ingot"),
             2
@@ -175,7 +174,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> GOLDEN_SHOVEL = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/golden_shovel"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "golden_shovel")),
             new Identifier("minecraft", "gold_nugget"),
             3
@@ -184,7 +183,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> GOLDEN_SWORD = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/golden_sword"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "golden_sword")),
             new Identifier("minecraft", "gold_nugget"),
             6
@@ -209,7 +208,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> IRON_CHESTPLATE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/iron_chestplate"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_chestplate")),
             new Identifier("minecraft", "iron_ingot"),
             2
@@ -226,7 +225,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> IRON_HOE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/iron_hoe"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_hoe")),
             new Identifier("minecraft", "iron_nugget"),
             6
@@ -235,7 +234,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> IRON_HORSE_ARMOR = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/iron_horse_armor"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_horse_armor")),
             new Identifier("minecraft", "iron_ingot"),
             2
@@ -244,7 +243,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> IRON_LEGGINGS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/iron_leggings"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_leggings")),
             new Identifier("minecraft", "iron_ingot"),
             2
@@ -261,7 +260,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> IRON_SHOVEL = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/iron_shovel"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_shovel")),
             new Identifier("minecraft", "iron_nugget"),
             3
@@ -270,7 +269,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> IRON_SWORD = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/iron_sword"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "iron_sword")),
             new Identifier("minecraft", "iron_nugget"),
             6
@@ -287,7 +286,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> LEATHER_CHESTPLATE = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/leather_chestplate"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "leather_chestplate")),
             new Identifier("minecraft", "leather"),
             3
@@ -304,7 +303,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> LEATHER_HORSE_ARMOR = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/leather_horse_armor"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "leather_horse_armor")),
             new Identifier("minecraft", "leather"),
             2
@@ -313,7 +312,7 @@ public class RecyclingRecipes {
 
     public static final Pair<Identifier, JsonObject> LEATHER_LEGGINGS = new Pair<>(
         new Identifier(ModInfo.MOD_ID, "recycling/leather_leggings"),
-        RecipeHelpers.createSmeltingRecipeJson(
+        createSmeltingRecipeJson(
             new Pair<>("item", new Identifier("minecraft", "leather_leggings")),
             new Identifier("minecraft", "leather"),
             2
